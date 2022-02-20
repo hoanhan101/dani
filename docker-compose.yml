@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  vlabelx:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: hoanhan101/dani-portfolio
+    container_name: dani-portfolio
+    ports:
+      - "80:80"

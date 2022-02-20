@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      href="{{ url_for('static', path='/css/styles.css') }}"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d800703a1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dani Nguyen</title>
+  </head>
+  <body>
+    {% block content %}{% endblock content %}
+  </body>
+</html>
