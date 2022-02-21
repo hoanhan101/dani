@@ -1,47 +1,78 @@
 {% extends "base.html" %} {% block content %}
-<div class="container mt-4">
+<div class="container">
   <nav class="level">
     <div class="level-left">
       <div class="level-item">
-        <figure class="image is-48x48">
+        <figure class="image is-32x32">
           <img src="{{ url_for('static', path='/img/image_logo.png') }}" />
         </figure>
       </div>
       <div class="level-item">
-        <p class="subtitle">DANI NGUYEN</p>
+        <p class="font-size-nav">DANI NGUYEN</p>
       </div>
     </div>
     <div class="level-right">
-      <p class="level-item mx-4"><a>WORK</a></p>
-      <p class="level-item mx-4"><a>ABOUT</a></p>
-      <p class="level-item mx-4"><a>daninguyen101@gmail.com</a></p>
+      <p class="level-item font-size-nav" style="margin-right: 40px">
+        <a style="color: #ef4423">WORK</a>
+      </p>
+      <p
+        class="level-item font-size-nav"
+        style="margin-left: 40px; margin-right: 40px"
+      >
+        ABOUT
+      </p>
+      <p
+        class="level-item font-size-nav"
+        style="margin-left: 40px; text-decoration: underline"
+      >
+        daninguyen101@gmail.com
+      </p>
     </div>
   </nav>
 </div>
-<div class="container"><hr class="hr-black" /></div>
+<div class="container"><hr /></div>
 <div class="container">
-  <figure class="image">
-    <img
-      src="{{ url_for('static', path='/img/image_hi.png') }}"
-      style="width: 384px; height: 80px"
-    />
-  </figure>
   <div class="columns">
-    <div class="column">
-      <div class="block">
-        I’m a UI/UX designer based in the Bay Area, California. I’m an
-        empathetic designer inspired to create aesthetically pleasing and
-        easy-to-use products from a human-centric approach.
+    <div class="column is-four-fifths">
+      <figure class="image" style="margin-top: 48px; margin-bottom: 40px">
+        <img
+          src="{{ url_for('static', path='/img/image_hi.png') }}"
+          style="width: 384px; height: 80px"
+        />
+      </figure>
+      <div class="block font-size-heading">
+        <p>I’m a UI/UX designer based in the Bay Area, California. I’m an</p>
+        <p style="margin-top: 8px">
+          empathetic designer inspired to create aesthetically pleasing
+        </p>
+        <p style="margin-top: 8px">
+          and easy-to-use products from a human-centric approach.
+        </p>
       </div>
     </div>
-    <div class="column is-one-quarter"></div>
+    <div class="column" style="position: relative">
+      <figure class="image" style="position: absolute; bottom: 0; right: 0">
+        <img
+          src="{{ url_for('static', path='/img/image_hand_1.png') }}"
+          style="height: 294px"
+        />
+      </figure>
+    </div>
   </div>
-  <div class="container"><hr class="hr-black" /></div>
+  <div class="container"><hr class="hr-section" /></div>
   <div class="container">
     <div class="columns">
       <div class="column is-two-fifths">
-        <div class="block">ROLE 1 / ROLE 2 / ROLE 3</div>
-        <h1 class="title is-1">Case Study Title Example</h1>
+        <div class="block font-size-role" style="margin-bottom: 32px">
+          <strong>ROLE 1 / ROLE 2 / ROLE 3</strong>
+        </div>
+        <h1
+          class="title is-1 font-size-project-name"
+          style="margin-bottom: 8px"
+        >
+          Case Study Title
+        </h1>
+        <h1 class="title is-1 font-size-project-name">Example</h1>
         <div class="block">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -56,52 +87,12 @@
       </div>
     </div>
   </div>
-  <div class="container"><hr class="hr-black" /></div>
-  <div class="container">
-    <div class="columns">
-      <div class="column is-two-fifths">
-        <div class="block">ROLE 1 / ROLE 2 / ROLE 3</div>
-        <h1 class="title is-1">Case Study Title Example</h1>
-        <div class="block">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation.
-        </div>
-        <button class="button is-rounded">VIEW CASE STUDY</button>
-      </div>
-      <div class="column">
-        <figure class="image">
-          <img src="{{ url_for('static', path='/img/image_laptop.png') }}" />
-        </figure>
-      </div>
-    </div>
-  </div>
-  <div class="container"><hr class="hr-black" /></div>
-  <div class="container">
-    <div class="columns">
-      <div class="column is-two-fifths">
-        <div class="block">ROLE 1 / ROLE 2 / ROLE 3</div>
-        <h1 class="title is-1">Case Study Title Example</h1>
-        <div class="block">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation.
-        </div>
-        <button class="button is-rounded">VIEW CASE STUDY</button>
-      </div>
-      <div class="column">
-        <figure class="image">
-          <img src="{{ url_for('static', path='/img/image_laptop.png') }}" />
-        </figure>
-      </div>
-    </div>
-  </div>
-  <div class="container"><hr class="hr-black" /></div>
+  <div class="container"><hr class="hr-section" /></div>
   <div class="container">
     <nav class="level">
       <div class="level-left">
         <div class="level-item">
-          <h1 class="title is-1">Sparked an interest?</h1>
+          <h1 class="title is-1 font-noto">Sparked an interest?</h1>
         </div>
         <div class="level-item">
           <figure class="image">

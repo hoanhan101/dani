@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("fonts/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("fonts/NotoSans-Bold.ttf");
+}
+
+body {
+  font-family: "Gilroy-Medium";
+}
+
+.font-size-heading {
+  font-size: 35px;
+}
+
+.font-size-nav {
+  font-size: 24px;
+}
+
+.font-size-role {
+  font-family: "NotoSans-Regular";
+  font-size: 20px;
+}
+
+.font-size-project-name {
+  font-family: "NotoSans-Bold";
+}
+
 hr {
   background-color: black;
+  height: 1.5px;
+}
+
+.hr-section {
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
