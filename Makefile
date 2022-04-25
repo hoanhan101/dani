@@ -2,7 +2,7 @@
 .DEFAULT_GOAL := help
 
 black:  ## Run black formatter
-	black app
+	black main.py
 
 build:  ## Build a local docker image
 	docker-compose -f docker-compose.yml build
