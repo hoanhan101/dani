@@ -1,11 +1,11 @@
 body {
     color: #333333;
-    font-family: "Epilogue-Regular";
+    font-family: "Epilogue", sans-serif;
     font-size: 20px;
 }
 
 .font-size-heading {
-    font-family: "Fraunces-Regular";
+    font-family: "Fraunces", serif;
     font-size: 60px;
 }
 
@@ -15,7 +15,7 @@ body {
 
 .font-size-role {
     color: #666666;
-    font-family: "Epilogue-Regular";
+    font-family: "Epilogue", sans-serif;
     font-size: 20px;
 }
 
@@ -38,7 +38,7 @@ body {
 
 .project-name {
     color: #333333;
-    font-family: "Fraunces-Regular";
+    font-family: "Fraunces", serif;
     font-size: 48px;
 }
 
