@@ -5,7 +5,7 @@ black:  ## Run black formatter
 	black main.py
 
 build:  ## Build a local docker image
-	docker-compose -f docker-compose.yml build
+	docker build -t hoanhan/dani:latest .
 
 up: black build  ## Run a local development
 	docker-compose -f docker-compose.yml up
