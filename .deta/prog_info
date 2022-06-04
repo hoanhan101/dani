@@ -1,1 +1,0 @@
-{"id":"6cc1d0cf-0f97-4e6b-bda0-01b20cb40302","space":17499,"runtime":"python3.9","name":"dani-portfolio","path":"v23dqy","project":"b0nr5ubw","account":"144798365827","region":"us-east-1","deps":["fastapi==0.70.1","uvicorn==0.16.0","Jinja2==3.0.3"],"envs":null,"public":true,"log_level":"debug","cron":""}
