@@ -5,7 +5,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
-    image: hoanhan101/dani
+    image: hoanhan/dani
     container_name: dani
     ports:
       - "80:80"
