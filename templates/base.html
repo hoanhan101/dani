@@ -1,30 +1,28 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link
-      href="{{ url_for('static', path='/css/styles.css') }}"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d800703a1a.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Dani Nguyen</title>
-  </head>
-  <body>
-    <div class="container my-5">{% block content %}{% endblock content %}</div>
-  </body>
-  <footer>
-    <div class="container my-6">
-      <p>
-        Made with sugar, spice, and everything nice. © 2022 All Rights Reserved.
-      </p>
-    </div>
-  </footer>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+        />
+        <link
+            href="{{ url_for('static', path='/css/styles.css') }}"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/d800703a1a.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Dani Nguyen</title>
+    </head>
+    <body>
+        <div class="container my-5">
+            {% block content %}{% endblock content %}
+        </div>
+    </body>
+    <footer>
+        <div class="container my-6"></div>
+    </footer>
 </html>

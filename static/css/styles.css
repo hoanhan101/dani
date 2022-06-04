@@ -1,45 +1,57 @@
 @font-face {
-  font-family: "Gilroy-Medium";
-  src: url("fonts/Gilroy-Medium.ttf");
+    font-family: "Epilogue-Regular";
+    src: url("fonts/Epilogue-Regular.ttf");
 }
 
 @font-face {
-  font-family: "NotoSans-Regular";
-  src: url("fonts/NotoSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "NotoSans-Bold";
-  src: url("fonts/NotoSans-Bold.ttf");
+    font-family: "Fraunces-Regular";
+    src: url("fonts/Fraunces-Regular.ttf");
 }
 
 body {
-  font-family: "Gilroy-Medium";
+    color: #333333;
+    font-family: "Epilogue-Regular";
+    font-size: 20px;
 }
 
 .font-size-heading {
-  font-size: 35px;
+    font-family: "Fraunces-Regular";
+    font-size: 60px;
 }
 
 .font-size-nav {
-  font-size: 24px;
+    font-size: 20px;
 }
 
 .font-size-role {
-  font-family: "NotoSans-Regular";
-  font-size: 20px;
+    color: #666666;
+    font-family: "Epilogue-Regular";
+    font-size: 20px;
 }
 
-.font-size-project-name {
-  font-family: "NotoSans-Bold";
+.hr-nav {
+    background-color: #333333;
+    height: 1.5px;
+    margin-bottom: 90px;
 }
 
-hr {
-  background-color: black;
-  height: 1.5px;
+.hr-nav-bottom {
+    background-color: #333333;
+    height: 1.5px;
 }
 
 .hr-section {
-  margin-top: 64px;
-  margin-bottom: 64px;
+    background-color: #ffffff;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.project-name {
+    color: #333333;
+    font-family: "Fraunces-Regular";
+    font-size: 48px;
+}
+
+.project-context {
+    line-height: 180%;
 }
