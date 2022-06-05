@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Epilogue&family=Fraunces&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Fraunces:wght@400;700&display=swap"
             rel="stylesheet"
         />
         <script
@@ -22,6 +22,39 @@
     </head>
     <body>
         <div class="container my-5">
+            <div class="container">
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <figure class="image is-24x24">
+                                <a href="/">
+                                    <img src="/static/img/logo.png" />
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <p
+                            class="level-item font-size-nav"
+                            style="margin-right: 40px"
+                        >
+                            <a href="/">Work</a>
+                        </p>
+                        <p
+                            class="level-item font-size-nav"
+                            style="margin-left: 40px; margin-right: 40px"
+                        >
+                            <a href="/about">About</a>
+                        </p>
+                        <p
+                            class="level-item font-size-nav"
+                            style="margin-left: 40px"
+                        >
+                            <a href="/contact">Contact</a>
+                        </p>
+                    </div>
+                </nav>
+            </div>
             {% block content %}{% endblock content %}
         </div>
     </body>

@@ -4,16 +4,62 @@ body {
     font-size: 20px;
 }
 
-.font-size-heading {
+a {
+    color: #333333;
+}
+
+a:hover {
+    color: #ef4423;
+}
+
+.content ul {
+    list-style: disc outside;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.heading1 {
+    color: #333333;
     font-family: "Fraunces", serif;
     font-size: 60px;
+    line-height: 150%;
 }
 
-.font-size-nav {
+.heading2 {
+    color: #333333;
+    font-family: "Fraunces", serif;
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.heading3 {
+    color: #333333;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    line-height: 180%;
+}
+
+.heading4 {
+    color: #333333;
+    font-family: "Epilogue", sans-serif;
     font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
 }
 
-.font-size-role {
+.body-text1 {
     color: #666666;
     font-family: "Epilogue", sans-serif;
     font-size: 20px;
@@ -25,9 +71,16 @@ body {
     margin-bottom: 90px;
 }
 
-.hr-nav-bottom {
+.hr-nav-no-margin {
     background-color: #333333;
     height: 1.5px;
+}
+
+.hr-page-break {
+    background-color: #333333;
+    height: 1.5px;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .hr-section {
@@ -36,12 +89,39 @@ body {
     margin-bottom: 64px;
 }
 
-.project-name {
-    color: #333333;
-    font-family: "Fraunces", serif;
-    font-size: 48px;
+.hr-section-project {
+    background-color: #ffffff;
+    margin-top: 34px;
+    margin-bottom: 34px;
 }
 
-.project-context {
+.hr-section-project-small {
+    background-color: #ffffff;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.line-height-180 {
     line-height: 180%;
+}
+
+.line-height-150 {
+    line-height: 150%;
+}
+
+.line-bold {
+    font-weight: 700;
+}
+
+.breadcrumb-text {
+    color: #ef4423;
+}
+
+.img-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
