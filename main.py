@@ -17,10 +17,4 @@ def index(request: Request):
 
 @app.get("/projects/{name}", response_class=HTMLResponse)
 def projects(request: Request, name: str):
-    pretty_name = name
-    if name == "timesheetx":
-        pretty_name = "TimeSheetX"
-
-    return jtemplates.TemplateResponse(
-        f"projects_{name}.html", {"request": request, "name": pretty_name}
-    )
+    return jtemplates.TemplateResponse(f"projects_{name}.html", {"request": request})
