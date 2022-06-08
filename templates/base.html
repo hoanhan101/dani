@@ -21,40 +21,36 @@
         <title>Dani Nguyen</title>
     </head>
     <body>
-        <div class="container my-5">
+        <nav
+            class="navbar py-3 is-fixed-top"
+            role="navigation"
+            aria-label="main navigation"
+        >
             <div class="container">
-                <nav class="level">
-                    <div class="level-left">
-                        <div class="level-item">
-                            <figure class="image is-24x24">
-                                <a href="/">
-                                    <img src="/static/img/logo.png" />
-                                </a>
-                            </figure>
+                <div class="pl-3 navbar-brand">
+                    <a href="/">
+                        <img
+                            class="image is-24x24"
+                            src="/static/img/logo.png"
+                        />
+                    </a>
+                </div>
+
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons font-size-nav">
+                                <a class="mr-5" href="/">Work</a>
+                                <a class="mx-5" href="/about">About</a>
+                                <a class="ml-5" href="/contact">Contact</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="level-right">
-                        <p
-                            class="level-item font-size-nav"
-                            style="margin-right: 40px"
-                        >
-                            <a href="/">Work</a>
-                        </p>
-                        <p
-                            class="level-item font-size-nav"
-                            style="margin-left: 40px; margin-right: 40px"
-                        >
-                            <a href="/about">About</a>
-                        </p>
-                        <p
-                            class="level-item font-size-nav"
-                            style="margin-left: 40px"
-                        >
-                            <a href="/contact">Contact</a>
-                        </p>
-                    </div>
-                </nav>
+                </div>
             </div>
+        </nav>
+        <div>
+            <div class="container my-6"><hr class="hr-nav-no-margin" /></div>
             {% block content %}{% endblock content %}
         </div>
     </body>
