@@ -12,6 +12,10 @@ a:hover {
     color: #ef4423;
 }
 
+.nav-underline {
+    border-bottom: 1.5px solid #333333;
+}
+
 .content ul {
     list-style: disc outside;
     margin-left: 1em;
