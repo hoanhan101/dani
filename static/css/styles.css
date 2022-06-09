@@ -16,6 +16,23 @@ a:hover {
     border-bottom: 1.5px solid #333333;
 }
 
+.button {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.button:hover {
+    border-color: #ffffff;
+    background: #ef4423;
+    color: #ffffff;
+}
+
+.button-case-study {
+    background: #333333;
+    border-radius: 31px;
+    color: #ffffff;
+}
+
 .content ul {
     list-style: disc outside;
     margin-left: 1em;
