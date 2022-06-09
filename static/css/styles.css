@@ -1,3 +1,6 @@
+html {
+    background-color: #f9f9f9;
+}
 body {
     color: #333333;
     font-family: "Epilogue", sans-serif;
@@ -12,25 +15,33 @@ a:hover {
     color: #ef4423;
 }
 
+nav {
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: #f9f9f9;
+}
+
 .nav-underline {
     border-bottom: 1.5px solid #333333;
 }
 
 .button {
-    border-color: #ffffff;
-    color: #ffffff;
+    border-color: #f9f9f9;
+    color: #f9f9f9;
 }
 
 .button:hover {
-    border-color: #ffffff;
+    border-color: #f9f9f9;
     background: #ef4423;
-    color: #ffffff;
+    color: #f9f9f9;
 }
 
 .button-case-study {
     background: #333333;
     border-radius: 31px;
-    color: #ffffff;
+    color: #f9f9f9;
 }
 
 .content ul {
@@ -93,19 +104,19 @@ a:hover {
 }
 
 .hr-section {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     margin-top: 64px;
     margin-bottom: 64px;
 }
 
 .hr-section-project {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     margin-top: 34px;
     margin-bottom: 34px;
 }
 
 .hr-section-project-small {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     margin-top: 14px;
     margin-bottom: 14px;
 }
