@@ -71,6 +71,13 @@ nav {
     line-height: 180%;
 }
 
+.heading3-hero {
+    font-family: "Cedarville Cursive", cursive;
+    color: #333333;
+    font-size: 32px;
+    line-height: 180%;
+}
+
 .heading4 {
     color: #333333;
     font-family: "Epilogue", sans-serif;
@@ -144,4 +151,52 @@ nav {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+}
+
+.img-edge-left {
+    position: absolute;
+    top: 18%;
+    left: -16%;
+}
+
+.img-edge-right {
+    position: relative;
+    right: -55%;
+}
+
+.element-relative {
+    position: relative;
+}
+
+.hero1 {
+    position: absolute;
+    top: 7%;
+    left: 46%;
+}
+
+.hero2 {
+    position: absolute;
+    top: 25%;
+}
+
+@media only screen and (max-width: 866px) {
+    #index-hero0 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1266px) {
+    #index-heading1 {
+        font-size: 36px;
+    }
+
+    #index-hr-page-break {
+        margin-top: 360px;
+    }
+}
+
+@media only screen and (min-width: 1266px) {
+    #index-hr-page-break {
+        margin-top: 180px;
+    }
 }
