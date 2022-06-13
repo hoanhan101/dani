@@ -178,6 +178,10 @@ nav {
     display: inline;
 }
 
+.img-otherside {
+    border-radius: 20px;
+}
+
 .element-relative {
     position: relative;
 }
@@ -205,6 +209,10 @@ nav {
     #index-hero0 {
         display: none;
     }
+
+    #index-connect-img {
+        width: 88%;
+    }
 }
 
 @media only screen and (max-width: 1266px) {
@@ -215,10 +223,18 @@ nav {
     #index-hr-page-break {
         margin-top: 360px;
     }
+
+    #index-connect-img {
+        width: 55%;
+    }
 }
 
 @media only screen and (min-width: 1266px) {
     #index-hr-page-break {
         margin-top: 180px;
+    }
+
+    #index-connect-img {
+        width: 48%;
     }
 }
