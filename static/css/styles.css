@@ -42,6 +42,9 @@ nav {
     background: #333333;
     border-radius: 31px;
     color: #f9f9f9;
+    font-size: 20px;
+    line-height: 180%;
+    padding-top: 0.75rem;
 }
 
 .content ul {
@@ -125,7 +128,7 @@ nav {
 
 .hr-section-project {
     background-color: #f9f9f9;
-    margin-top: 34px;
+    margin-top: 48px;
     margin-bottom: 34px;
 }
 
@@ -169,6 +172,10 @@ nav {
 .img-edge-right {
     position: relative;
     right: -55%;
+}
+
+.img-inline {
+    display: inline;
 }
 
 .element-relative {
