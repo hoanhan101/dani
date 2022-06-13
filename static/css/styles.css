@@ -64,6 +64,13 @@ nav {
     line-height: 150%;
 }
 
+.heading2-hero {
+    color: #333333;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 48px;
+    line-height: 150%;
+}
+
 .heading3 {
     color: #333333;
     font-family: "Fraunces", serif;
@@ -177,6 +184,10 @@ nav {
 .hero2 {
     position: absolute;
     top: 25%;
+}
+
+.padding-top-half {
+    padding-top: 50%;
 }
 
 @media only screen and (max-width: 866px) {
