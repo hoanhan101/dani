@@ -180,6 +180,10 @@ nav {
 }
 
 @media only screen and (max-width: 866px) {
+    html {
+        padding: 30px;
+    }
+
     #index-hero0 {
         display: none;
     }
