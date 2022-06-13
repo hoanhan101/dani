@@ -9,6 +9,7 @@ body {
 
 a {
     color: #333333;
+    transition-duration: 1s;
 }
 
 a:hover {
@@ -30,6 +31,7 @@ nav {
 .button {
     border-color: #f9f9f9;
     color: #f9f9f9;
+    transition-duration: 1s;
 }
 
 .button:hover {
@@ -198,7 +200,7 @@ nav {
 }
 
 .padding-top-half {
-    padding-top: 50%;
+    padding-top: 60%;
 }
 
 @media only screen and (max-width: 866px) {
