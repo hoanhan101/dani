@@ -11,6 +11,11 @@ jtemplates = Jinja2Templates(directory="templates")
 
 
 @app.get("/", response_class=HTMLResponse)
+def tmp_index(request: Request):
+    return jtemplates.TemplateResponse("501.html", {"request": request})
+
+
+@app.get("/index", response_class=HTMLResponse)
 def index(request: Request):
     return jtemplates.TemplateResponse("index.html", {"request": request})
 
@@ -28,8 +33,3 @@ def index(request: Request):
 @app.get("/projects/{name}", response_class=HTMLResponse)
 def projects(request: Request, name: str):
     return jtemplates.TemplateResponse(f"projects_{name}.html", {"request": request})
-
-
-@app.get("/501", response_class=HTMLResponse)
-def wip(request: Request):
-    return jtemplates.TemplateResponse("501.html", {"request": request})
