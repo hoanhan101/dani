@@ -1,6 +1,7 @@
 html {
     background-color: #f9f9f9;
 }
+
 body {
     color: #333333;
     font-family: "Epilogue", sans-serif;
@@ -201,6 +202,14 @@ nav {
 
 .padding-top-half {
     padding-top: 60%;
+}
+
+.zoom:hover {
+    transition: 0.5s;
+}
+
+.zoom:hover {
+    transform: scale(1.025);
 }
 
 @media only screen and (max-width: 866px) {
