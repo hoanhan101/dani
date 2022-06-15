@@ -10,11 +10,6 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 jtemplates = Jinja2Templates(directory="templates")
 
 
-# @app.get("/", response_class=HTMLResponse)
-# def tmp_index(request: Request):
-#     return jtemplates.TemplateResponse("501.html", {"request": request})
-
-
 @app.get("/", response_class=HTMLResponse)
 def index(request: Request):
     return jtemplates.TemplateResponse("index.html", {"request": request})
