@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 <div class="container my-6"><hr class="hr-section" /></div>
-<div class="container">
+<div class="container pt-3">
     <div class="columns">
         <div class="column is-three-fifths is-offset-one-fifth">
             <div class="block heading1">
@@ -56,7 +56,12 @@
             <p class="heading4">My Role</p>
         </div>
         <div class="column is-6 is-offset-1">
-            <p class="line-height-180">UX/UI Designer</p>
+            <p class="line-height-180">Product design • Solo project</p>
+            <p class="line-height-180 is-italic has-text-grey">
+                Disclaimer: I am not affiliated with TimesheetX. This case study
+                is an exploratory learning experience on a product that I deeply
+                care about.
+            </p>
         </div>
     </div>
     <div class="columns">
@@ -228,13 +233,6 @@
                 out to identify problem areas and opportunities for
                 improvements.
             </p>
-            <p class="line-height-180 mb-3">
-                The map reveals that multiple touchpoints are required to
-                successfully submit a single timesheet. Besides switching
-                devices, students often need additional communication with peers
-                and supervisors for error troubleshooting, which leads to
-                frustration and wasted time.
-            </p>
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
@@ -252,6 +250,16 @@
     <div class="columns">
         <div class="column is-6 is-offset-4">
             <p class="line-bold line-height-180 my-3">
+                Multiple touchpoints are required to successfully submit a
+                single timesheet.
+            </p>
+            <p class="line-height-180 mb-3">
+                Besides switching devices, students often need additional
+                communication with peers and supervisors to override unnessary
+                work allotment restrictions, which leads to frustration and
+                wasted time.
+            </p>
+            <p class="line-bold line-height-180 mb-3">
                 Date and time entry is the most painful part.
             </p>
             <p class="line-height-180 mb-3">
@@ -268,17 +276,15 @@
             <p class="heading3">From problems to solutions</p>
         </div>
         <div class="content column is-6 is-offset-1">
-            <p class="line-height-180 my-3">
-                So how might we streamline this tedious process?
-            </p>
-            <p class="line-height-180 my-3">
-                With the help of a few other UX students, I brainstormed
-                different solutions for each problem areas identified. After a
-                comprehensive card sort, these potential solutions were then
-                translated into several wireframe concepts for testing. Since
-                the phone is most students’ preferred device, this is where I
-                started.
-            </p>
+            <p class="line-bold line-height-180 my-3">So how might we?</p>
+            <ul>
+                <li>Design a work schedule and timesheet auto-fill feature</li>
+                <li>Design more screens for a more realistic prototype</li>
+                <li>
+                    Conduct more user testings and keep refining the design
+                    based on test results
+                </li>
+            </ul>
         </div>
     </div>
     <div class="columns">
@@ -286,23 +292,69 @@
             <figure>
                 <img
                     class="zoom"
-                    src="/static/img/timesheetx_wireframe.png"
-                    alt="Wireframes"
+                    src="/static/img/timesheetx_wireframe1.png"
+                    alt="Wireframe 1"
                 />
             </figure>
         </div>
     </div>
     <div class="columns">
-        <div class="column is-6 is-offset-4">
+        <div class="column is-9 is-offset-1">
+            <figure>
+                <img
+                    class="zoom"
+                    src="/static/img/timesheetx_wireframe2.png"
+                    alt="Wireframe 2"
+                />
+            </figure>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-section-project-small" /></div>
+    <div class="columns is-flex is-vcentered">
+        <div class="column is-5 is-offset-1">
+            <figure>
+                <img
+                    class="zoom"
+                    src="/static/img/timesheetx_wireframe3.png"
+                    alt="Wireframe 3"
+                />
+            </figure>
+        </div>
+        <div class="column is-4">
             <p class="line-bold line-height-180 my-3">
-                All students prefer a clean layout showing only relevant
-                features and information.
+                Only show relevant information.
             </p>
             <p class="line-height-180 mb-3">
-                Past jobs, old timesheets, and help documentation are stored
-                away in easy-to-find categories. Timesheet layout, workflow, and
-                interactions are customized to meet students’ needs.
+                Since students rarely need to review past jobs, old timesheets,
+                and help documentation, this information is stored away in
+                easy-to-find categories. A card sort exercise with students also
+                reveals that they prefer all help documentation in one
+                “Resources” category.
             </p>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-section-project-small" /></div>
+    <div class="columns is-flex is-vcentered">
+        <div class="column is-5 is-offset-1">
+            <p class="line-bold line-height-180 my-3">
+                Flexible timesheet layout.
+            </p>
+            <p class="line-height-180 mb-3">
+                Instead of a calendar view with a designated time slot for each
+                day, students prefer to add shifts themselves. It gives them the
+                flexibility of only adding dates they worked and multiple shifts
+                a day when applicable. Plus, it saves screen space and works
+                well with vertical scrolling, which all students prefer.
+            </p>
+        </div>
+        <div class="column is-4">
+            <figure>
+                <img
+                    class="zoom"
+                    src="/static/img/timesheetx_wireframe4.png"
+                    alt="Wireframe 4"
+                />
+            </figure>
         </div>
     </div>
 </div>
@@ -364,6 +416,18 @@
 <div class="container">
     <p class="heading2">The results</p>
     <div class="container"><hr class="hr-section-project" /></div>
+    <div class="columns">
+        <div class="column">
+            <figure>
+                <img
+                    class="zoom"
+                    src="/static/img/timesheetx_result_banner.png"
+                    alt="Result Banner"
+                />
+            </figure>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-section-project-small" /></div>
     <div class="columns is-flex is-vcentered">
         <div class="column is-4 is-offset-1">
             <video class="video-demo" controls>
@@ -442,6 +506,52 @@
     </div>
 </div>
 <div class="container"><hr class="hr-page-break" /></div>
+<div class="container">
+    <p class="heading2">Last thoughts</p>
+    <div class="container"><hr class="hr-section-project" /></div>
+    <div class="columns">
+        <div class="column is-2 is-offset-1">
+            <p class="heading3">If I had more time, I would</p>
+        </div>
+        <div class="content column is-6 is-offset-1">
+            <ul>
+                <li>Design a work schedule and timesheet auto-fill feature</li>
+                <li>Design more screens for a more realistic prototype</li>
+                <li>
+                    Conduct more user testings and keep refining the design
+                    based on test results
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-section-project-small" /></div>
+    <div class="columns">
+        <div class="column is-2 is-offset-1">
+            <p class="heading3">Moving forward</p>
+        </div>
+        <div class="content column is-6 is-offset-1">
+            <p class="line-height-180 my-3">
+                This project has led me to connect with my fellow students and
+                talked about the struggles that were often brushed off. But it
+                also makes me feel blue: Although students make up the majority
+                of TimesheetX users, they didn’t get a say in choosing the
+                product in the first place and feel forced to use an outdated
+                product.
+            </p>
+            <p class="line-height-180 mb-3">
+                So moving forward, I plan to bring my design to TimesheetX and
+                hopefully see them renew the product in the future!
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container"><hr class="hr-section-project" /></div>
+<div class="container">
+    <figure class="img-full-width">
+        <img src="/static/img/timesheetx_result_footer.png" alt="Footer" />
+    </figure>
+</div>
+<div class="container"><hr class="hr-section-project" /></div>
 <div class="container">
     <p class="heading2 has-text-centered">More case studies</p>
     <hr class="hr-section-project" />
