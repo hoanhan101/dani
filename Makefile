@@ -10,7 +10,7 @@ build:  ## Build a local docker image
 up: black build  ## Run a local development
 	docker-compose -f docker-compose.yml up
 
-push: ## Push to github, dockerhub and digitalocean
+push: black build  ## Push to github, dockerhub and digitalocean
 	git push origin master && docker push hoanhan/dani && sleep 6 && doctl apps create-deployment ${DEPLOYMENT_ID} --force-rebuild
 
 help:  ## Print usage information
