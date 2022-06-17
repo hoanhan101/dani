@@ -20,6 +20,11 @@ def index(request: Request):
     return jtemplates.TemplateResponse("about.html", {"request": request})
 
 
+@app.get("/resume", response_class=HTMLResponse)
+def index(request: Request):
+    return jtemplates.TemplateResponse("resume.html", {"request": request})
+
+
 @app.get("/otherside", response_class=HTMLResponse)
 def index(request: Request):
     return jtemplates.TemplateResponse("otherside.html", {"request": request})
