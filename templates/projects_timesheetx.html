@@ -312,7 +312,7 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div class="columns is-vcentered">
         <div class="column is-5 is-offset-1">
             <figure>
                 <img
@@ -336,7 +336,7 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div class="columns is-vcentered">
         <div class="column is-5 is-offset-1">
             <p class="line-bold line-height-180 my-3">
                 Flexible timesheet layout.
@@ -430,7 +430,7 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div class="columns is-vcentered">
         <div class="column is-4 is-offset-1">
             <video class="video-demo" controls>
                 <source
@@ -456,7 +456,32 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div id="result-timesheetx-mobile1" class="columns is-vcentered">
+        <div class="column is-4 is-offset-1">
+            <video class="video-demo" controls>
+                <source
+                    src="/static/video/timesheetx_video2.mov"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content column is-5 is-offset-1">
+            <p class="line-height-180 my-3 heading3">
+                Customized layouts and interactions
+            </p>
+            <p class="line-height-180 mb-3">
+                The two-week timesheet period is broken down into two rows for
+                easier recalling and to avoid selecting the wrong dates.
+            </p>
+            <p class="line-height-180 mb-3">
+                Students are able to add and remove shifts quickly. Date and
+                time selection resembles the alarm setting design on mobile
+                devices for ease of use.
+            </p>
+        </div>
+    </div>
+    <div id="result-timesheetx-desktop1" class="columns is-vcentered">
         <div class="content column is-5 is-offset-1">
             <p class="line-height-180 my-3 heading3">
                 Customized layouts and interactions
@@ -482,7 +507,7 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div class="columns is-vcentered">
         <div class="column is-4 is-offset-1">
             <video class="video-demo" controls>
                 <source
@@ -587,4 +612,28 @@
         </div>
     </div>
 </div>
+<script>
+    const resultTimesheetXMobile1 = document.getElementById(
+        "result-timesheetx-mobile1"
+    );
+    const resultTimesheetXDesktop1 = document.getElementById(
+        "result-timesheetx-desktop1"
+    );
+    const updateResultTimesheetX = () => {
+        if (window.innerWidth <= 866) {
+            resultTimesheetXMobile1.style.display = "";
+            resultTimesheetXDesktop1.style.display = "none";
+        } else {
+            resultTimesheetXMobile1.style.display = "none";
+            resultTimesheetXDesktop1.style.display = "";
+        }
+    };
+
+    // Init
+    updateResultTimesheetX();
+
+    window.addEventListener("resize", function (event) {
+        updateResultTimesheetX();
+    });
+</script>
 {% endblock %}

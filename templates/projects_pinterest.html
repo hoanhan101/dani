@@ -450,7 +450,7 @@
 <div class="container">
     <p class="heading2">The results</p>
     <div class="container"><hr class="hr-section-project" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div class="columns is-vcentered">
         <div class="column is-4 is-offset-1">
             <video class="video-demo" controls>
                 <source
@@ -471,7 +471,27 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div id="result-pinterest-mobile1" class="container columns is-vcentered">
+        <div class="column is-4 is-offset-1">
+            <video class="video-demo" controls>
+                <source
+                    src="/static/video/pinterest_video2.mov"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content column is-5 is-offset-1">
+            <p class="line-height-180 my-3 heading3">
+                Customized categories and filters for Pinners
+            </p>
+            <p class="line-height-180 mb-3">
+                Shopping categories are customized to Pinterest’s most searched
+                items to give users prominent access to wanted products.
+            </p>
+        </div>
+    </div>
+    <div id="result-pinterest-desktop1" class="container columns is-vcentered">
         <div class="content column is-5 is-offset-1">
             <p class="line-height-180 my-3 heading3">
                 Customized categories and filters for Pinners
@@ -492,7 +512,7 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div class="columns is-vcentered">
         <div class="column is-4 is-offset-1">
             <video class="video-demo" controls>
                 <source
@@ -513,7 +533,31 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-flex is-vcentered">
+    <div id="result-pinterest-mobile2" class="columns is-vcentered">
+        <div class="column is-4 is-offset-1">
+            <video class="video-demo" controls>
+                <source
+                    src="/static/video/pinterest_video4.mov"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content column is-5 is-offset-1">
+            <p class="line-height-180 my-3 heading3">
+                Checkout quickly and securely
+            </p>
+            <p class="line-height-180 mb-3">
+                Users can order multiple products from different sellers while
+                checkout only once with a simple 3-step checkout.
+            </p>
+            <p class="line-height-180 mb-3">
+                Shipping and payment information is presented transparently to
+                ease any security concerns.
+            </p>
+        </div>
+    </div>
+    <div id="result-pinterest-desktop2" class="columns is-vcentered">
         <div class="content column is-5 is-offset-1">
             <p class="line-height-180 my-3 heading3">
                 Checkout quickly and securely
@@ -624,4 +668,39 @@
         </div>
     </div>
 </div>
+<script>
+    const resultPinterestMobile1 = document.getElementById(
+        "result-pinterest-mobile1"
+    );
+    const resultPinterestDesktop1 = document.getElementById(
+        "result-pinterest-desktop1"
+    );
+    const resultPinterestMobile2 = document.getElementById(
+        "result-pinterest-mobile2"
+    );
+    const resultPinterestDesktop2 = document.getElementById(
+        "result-pinterest-desktop2"
+    );
+
+    const updateResultPinterest = () => {
+        if (window.innerWidth <= 866) {
+            resultPinterestMobile1.style.display = "";
+            resultPinterestMobile2.style.display = "";
+            resultPinterestDesktop1.style.display = "none";
+            resultPinterestDesktop2.style.display = "none";
+        } else {
+            resultPinterestMobile1.style.display = "none";
+            resultPinterestMobile2.style.display = "none";
+            resultPinterestDesktop1.style.display = "";
+            resultPinterestDesktop2.style.display = "";
+        }
+    };
+
+    // Init
+    updateResultPinterest();
+
+    window.addEventListener("resize", function (event) {
+        updateResultPinterest();
+    });
+</script>
 {% endblock %}
