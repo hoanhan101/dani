@@ -76,10 +76,10 @@
         <div class="container"><hr class="hr-page-break" /></div>
         <div class="container">
             <div class="columns">
-                <div class="column is-7 has-text-right">
+                <div id="footer-connect1" class="column is-7 has-text-right">
                     <p class="heading2 mb-5">Sparked an interest?</p>
                 </div>
-                <div class="column">
+                <div id="footer-connect2" class="column">
                     <p class="heading2-hero">Let's connect!</p>
                     <figure class="image">
                         <img
@@ -216,6 +216,25 @@
         </div>
     </footer>
     <script>
+        const footerConnect1 = document.getElementById("footer-connect1");
+        const footerConnect2 = document.getElementById("footer-connect2");
+        const updateFooterConnect = () => {
+            if (window.innerWidth < 766) {
+                footerConnect1.style = "text-align: center!important;";
+                footerConnect2.style = "padding-left: 23%";
+            } else {
+                footerConnect1.style = "text-align: right!important;";
+                footerConnect2.style = "padding-left: 0%";
+            }
+        };
+
+        // Init
+        updateFooterConnect();
+
+        window.addEventListener("resize", function (event) {
+            updateFooterConnect();
+        });
+
         // Dropdown toggle example
         // https://bulma.io/documentation/components/navbar/
         document.addEventListener("DOMContentLoaded", () => {
