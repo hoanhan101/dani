@@ -25,6 +25,11 @@ nav {
     background-color: #f9f9f9;
 }
 
+.navbar-menu {
+    background-color: #f9f9f9;
+    box-shadow: none;
+}
+
 .nav-underline {
     border-bottom: 1.5px solid #333333;
 }
@@ -246,6 +251,14 @@ nav {
 
     #index-connect-img {
         width: 88%;
+    }
+
+    .hero1 {
+        left: 26%;
+    }
+
+    .img-edge-right {
+        right: -35%;
     }
 }
 

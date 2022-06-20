@@ -82,7 +82,44 @@
         </div>
     </div>
     <div class="container"><hr class="hr-section" /></div>
-    <div class="containter">
+    <div id="section-timesheetx-mobile" class="containter">
+        <div class="columns">
+            <div class="column is-offset-1">
+                <figure class="image">
+                    <a href="/projects/timesheetx">
+                        <img
+                            class="zoom"
+                            src="/static/img/timesheetx_thumbnail.png"
+                        />
+                    </a>
+                </figure>
+            </div>
+            <div class="column ml-6">
+                <div class="block body-text1">
+                    <p>Responsive web design • UX/UI Design</p>
+                </div>
+                <div class="block">
+                    <p class="heading2">TimesheetX</p>
+                </div>
+                <div class="block">
+                    <p class="line-height-150">
+                        Reducing students’ cognitive load for a tedious task by
+                        redesigning an out-of-the-box timesheet website.
+                    </p>
+                </div>
+                <div class="block">
+                    <a
+                        href="/projects/timesheetx"
+                        class="button button-case-study"
+                    >
+                        View case study
+                    </a>
+                </div>
+            </div>
+            <div class="column is-1"></div>
+        </div>
+    </div>
+    <div id="section-timesheetx-desktop" class="containter">
         <div class="columns">
             <div class="column is-offset-1">
                 <div class="block body-text1">
@@ -213,4 +250,30 @@
         </div>
     </div>
 </div>
+<script>
+    const sectionTimesheetxMobile = document.getElementById(
+        "section-timesheetx-mobile"
+    );
+    const sectionTimesheetxDesktop = document.getElementById(
+        "section-timesheetx-desktop"
+    );
+
+    const updateSectionTimesheet = () => {
+        console.log(window.innerWidth);
+        if (window.innerWidth <= 866) {
+            sectionTimesheetxMobile.style.display = "block";
+            sectionTimesheetxDesktop.style.display = "none";
+        } else {
+            sectionTimesheetxMobile.style.display = "none";
+            sectionTimesheetxDesktop.style.display = "block";
+        }
+    };
+
+    // Init
+    updateSectionTimesheet();
+
+    window.addEventListener("resize", function (event) {
+        updateSectionTimesheet();
+    });
+</script>
 {% endblock %}
