@@ -87,14 +87,25 @@ nav {
     margin-top: 1em;
 }
 
-.footer-group {
+.inverse-color-group {
     background-color: #2f2d2b !important;
     color: #f1efea !important;
 }
 
-.footer-group-space {
+.inverse-color-group-space {
     background-color: #2f2d2b !important;
     color: #2f2d2b !important;
+}
+
+.hero-background {
+    background-color: #2f2d2b;
+}
+
+.heading-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 199px;
 }
 
 .heading1 {
@@ -224,12 +235,23 @@ nav {
     line-height: 150%;
 }
 
+.line-height-100 {
+    line-height: 100%;
+}
+
 .line-bold {
     font-weight: 700;
 }
 
 .breadcrumb-text {
-    color: #c0391e;
+    color: #d43d20;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.breadcrumb-text:hover {
+    color: #d43d20;
+    text-decoration: underline;
 }
 
 .img-full-width {
