@@ -4,8 +4,9 @@ html {
 
 body {
     color: #333333;
-    font-family: "Epilogue", sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 20px;
+    letter-spacing: -1.5px;
 }
 
 a {
@@ -15,6 +16,24 @@ a {
 
 a:hover {
     color: #ef4423;
+}
+
+.margin-l-6 {
+    margin-left: 3rem;
+}
+
+.margin-x-6 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.img-logo {
+    width: 74px;
+    height: 28px;
+}
+
+.margin-r-6 {
+    margin-right: 3rem;
 }
 
 nav {
@@ -34,6 +53,13 @@ nav {
     border-bottom: 1.5px solid #333333;
 }
 
+.font-size-nav {
+    color: #333333;
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .button {
     border-color: #f9f9f9;
     color: #f9f9f9;
@@ -48,11 +74,11 @@ nav {
 
 .button-case-study {
     background: #333333;
-    border-radius: 31px;
+    border-radius: 2px;
     color: #f9f9f9;
     font-size: 20px;
     line-height: 180%;
-    padding-top: 0.75rem;
+    padding-top: 0.5rem;
 }
 
 .content ul {
@@ -63,30 +89,56 @@ nav {
 
 .heading1 {
     color: #333333;
-    font-family: "Fraunces", serif;
-    font-size: 60px;
+    font-family: "Vollkorn", serif;
+    font-size: 44px;
     line-height: 150%;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.heading1-space {
+    color: #f9f9f9;
+    margin-left: -0.6rem;
+}
+
+.heading1-hero {
+    color: #333333;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 60px;
+    border-bottom: 2px solid;
+    display: inline-block;
+    line-height: 69%;
+    letter-spacing: -1.5px;
+}
+
+.heading1-hero-no-underline {
+    color: #333333;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 60px;
+    line-height: 69%;
 }
 
 .heading2 {
     color: #333333;
-    font-family: "Fraunces", serif;
-    font-size: 48px;
+    font-family: "Vollkorn", serif;
+    font-size: 32px;
     line-height: 150%;
 }
 
 .heading2-hero {
     color: #333333;
-    font-family: "Cedarville Cursive", cursive;
-    font-size: 48px;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 60px;
     line-height: 150%;
 }
 
 .heading3 {
     color: #333333;
-    font-family: "fraunces", serif;
-    font-size: 27.5px;
-    line-height: 180%;
+    font-family: "Karla", serif;
+    font-size: 28px;
+    line-height: 150%;
+    font-weight: 700;
+    letter-spacing: -1.5px;
 }
 
 .heading3-hero {
@@ -106,7 +158,7 @@ nav {
 
 .body-text1 {
     color: #666666;
-    font-family: "Epilogue", sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 20px;
 }
 
@@ -122,8 +174,8 @@ nav {
 }
 
 .hr-page-break {
-    background-color: #333333;
-    height: 1.5px;
+    background-color: #aea69e;
+    height: 1px;
     margin-top: 64px;
     margin-bottom: 64px;
 }
@@ -240,7 +292,7 @@ nav {
     opacity: 1;
 }
 
-@media only screen and (max-width: 866px) {
+@media (max-width: 414px) {
     html {
         padding: 30px;
     }
@@ -260,9 +312,61 @@ nav {
     .img-edge-right {
         right: -35%;
     }
+
+    .font-size-nav {
+        font-size: 16px;
+    }
+
+    .margin-l-6 {
+        margin-left: 1.5rem;
+    }
+
+    .margin-x-6 {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .margin-r-6 {
+        margin-right: 1.5rem;
+    }
+
+    .heading1 {
+        font-size: 27px;
+        line-height: 120%;
+    }
+
+    .heading1-space {
+        margin-left: -0.2rem;
+    }
+
+    .heading1-hero,
+    .heading1-hero-no-underline {
+        font-size: 35px;
+        line-height: 75%;
+    }
+
+    .img-logo {
+        width: 52.86px;
+        height: 20px;
+    }
 }
 
-@media only screen and (max-width: 1266px) {
+@media (min-width: 414px) and (max-width: 866px) {
+    html {
+        padding: 30px;
+    }
+
+    .img-logo {
+        width: 63.43px;
+        height: 24px;
+    }
+}
+
+@media (min-width: 866px) and (max-width: 1266px) {
+    html {
+        padding: 30px;
+    }
+
     #index-heading1 {
         font-size: 36px;
     }
@@ -276,7 +380,7 @@ nav {
     }
 }
 
-@media only screen and (min-width: 1266px) {
+@media (min-width: 1266px) {
     #index-hr-page-break {
         margin-top: 180px;
     }
