@@ -1,21 +1,21 @@
 html {
-    background-color: #f9f9f9;
+    background-color: #f1efea;
 }
 
 body {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Karla", sans-serif;
     font-size: 20px;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.5px;
 }
 
 a {
-    color: #333333;
+    color: #2f2d2b;
     transition-duration: 0.25s;
 }
 
 a:hover {
-    color: #ef4423;
+    color: #c0391e;
 }
 
 .margin-l-6 {
@@ -37,45 +37,45 @@ a:hover {
 }
 
 nav {
-    background-color: #f9f9f9;
+    background-color: #f1efea;
 }
 
 .navbar {
-    background-color: #f9f9f9;
+    background-color: #f1efea;
 }
 
 .navbar-menu {
-    background-color: #f9f9f9;
+    background-color: #f1efea;
     box-shadow: none;
 }
 
 .nav-underline {
-    border-bottom: 1.5px solid #333333;
+    border-bottom: 1.5px solid #2f2d2b;
 }
 
 .font-size-nav {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Karla", sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
 
 .button {
-    border-color: #f9f9f9;
-    color: #f9f9f9;
+    border-color: #f1efea;
+    color: #f1efea;
     transition-duration: 0.25s;
 }
 
 .button:hover {
-    border-color: #f9f9f9;
-    background: #ef4423;
-    color: #f9f9f9;
+    border-color: #f1efea;
+    background: #c0391e;
+    color: #f1efea;
 }
 
 .button-case-study {
-    background: #333333;
+    background: #2f2d2b;
     border-radius: 2px;
-    color: #f9f9f9;
+    color: #f1efea;
     font-size: 20px;
     line-height: 180%;
     padding-top: 0.5rem;
@@ -87,8 +87,18 @@ nav {
     margin-top: 1em;
 }
 
+.footer-group {
+    background-color: #2f2d2b !important;
+    color: #f1efea !important;
+}
+
+.footer-group-space {
+    background-color: #2f2d2b !important;
+    color: #2f2d2b !important;
+}
+
 .heading1 {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Vollkorn", serif;
     font-size: 44px;
     line-height: 150%;
@@ -97,12 +107,12 @@ nav {
 }
 
 .heading1-space {
-    color: #f9f9f9;
+    color: #f1efea;
     margin-left: -0.6rem;
 }
 
 .heading1-hero {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Reenie Beanie", cursive;
     font-size: 60px;
     border-bottom: 2px solid;
@@ -112,28 +122,28 @@ nav {
 }
 
 .heading1-hero-no-underline {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Reenie Beanie", cursive;
     font-size: 60px;
     line-height: 69%;
 }
 
 .heading2 {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Vollkorn", serif;
     font-size: 32px;
     line-height: 150%;
 }
 
 .heading2-hero {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Reenie Beanie", cursive;
     font-size: 60px;
     line-height: 150%;
 }
 
 .heading3 {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Karla", serif;
     font-size: 28px;
     line-height: 150%;
@@ -143,13 +153,13 @@ nav {
 
 .heading3-hero {
     font-family: "Cedarville Cursive", cursive;
-    color: #333333;
+    color: #2f2d2b;
     font-size: 27.5px;
     line-height: 180%;
 }
 
 .heading4 {
-    color: #333333;
+    color: #2f2d2b;
     font-family: "Epilogue", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -163,13 +173,13 @@ nav {
 }
 
 .hr-nav {
-    background-color: #333333;
+    background-color: #2f2d2b;
     height: 1.5px;
     margin-bottom: 90px;
 }
 
 .hr-nav-no-margin {
-    background-color: #333333;
+    background-color: #2f2d2b;
     height: 1.5px;
 }
 
@@ -180,20 +190,28 @@ nav {
     margin-bottom: 64px;
 }
 
+.hr-page-break-footer {
+    background-color: #aea69e;
+    height: 1px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-bottom: 20px;
+}
+
 .hr-section {
-    background-color: #f9f9f9;
+    background-color: #f1efea;
     margin-top: 64px;
     margin-bottom: 64px;
 }
 
 .hr-section-project {
-    background-color: #f9f9f9;
+    background-color: #f1efea;
     margin-top: 48px;
     margin-bottom: 34px;
 }
 
 .hr-section-project-small {
-    background-color: #f9f9f9;
+    background-color: #f1efea;
     margin-top: 14px;
     margin-bottom: 14px;
 }
@@ -211,7 +229,7 @@ nav {
 }
 
 .breadcrumb-text {
-    color: #ef4423;
+    color: #c0391e;
 }
 
 .img-full-width {
@@ -293,8 +311,8 @@ nav {
 }
 
 @media (max-width: 414px) {
-    html {
-        padding: 30px;
+    body {
+        font-size: 16px;
     }
 
     #index-hero0 {
@@ -352,10 +370,6 @@ nav {
 }
 
 @media (min-width: 414px) and (max-width: 866px) {
-    html {
-        padding: 30px;
-    }
-
     .img-logo {
         width: 63.43px;
         height: 24px;
@@ -363,10 +377,6 @@ nav {
 }
 
 @media (min-width: 866px) and (max-width: 1266px) {
-    html {
-        padding: 30px;
-    }
-
     #index-heading1 {
         font-size: 36px;
     }

@@ -36,7 +36,7 @@
         >
             <div class="container pb-2">
                 <div class="pl-3 pt-3 navbar-brand">
-                    <a href="/">
+                    <a class="navbar-item" href="/">
                         <img
                             class="image img-logo"
                             src="https://dani.sfo3.digitaloceanspaces.com/img/logo.png"
@@ -72,177 +72,90 @@
                 </div>
             </div>
         </nav>
-        <div>
+        <div class="section">
             <div class="container my-3"></div>
             {% block content %}{% endblock content %}
         </div>
     </body>
-    <footer>
-        <div class="container"><hr class="hr-page-break" /></div>
-        <div class="container">
-            <div class="columns">
-                <div id="footer-connect1" class="column is-7 has-text-right">
-                    <p class="heading2 mb-5">Sparked an interest?</p>
-                </div>
-                <div id="footer-connect2" class="column">
-                    <p class="heading2-hero">Let's connect!</p>
-                    <figure class="image">
-                        <img
-                            id="index-connect-img"
-                            src="https://dani.sfo3.digitaloceanspaces.com/img/connect_underline.svg"
-                        />
-                    </figure>
-                </div>
+    <footer class="footer-group">
+        <hr class="hr-section" />
+        <div class="section">
+            <div class="container">
+                <p class="heading1">
+                    <span class="heading1 footer-group"
+                        >Sparked an interested?</span
+                    >
+                    <span class="heading1-space footer-group-space">.</span>
+                    <span class="heading1-hero footer-group"
+                        >Let’s connect!</span
+                    >
+                </p>
+
+                <!-- EMAIL -->
+                <hr class="hr-page-break-footer footer-group" />
+                <nav class="level is-mobile footer-group">
+                    <div class="level-left">
+                        <figure class="level-item image is-32x32">
+                            <img
+                                src="https://dani.sfo3.digitaloceanspaces.com/img/icon_mail.svg"
+                            />
+                        </figure>
+                        <p class="level-item">
+                            <a
+                                class="footer-group"
+                                href="mailto:daninguyen101@gmail.com"
+                                target="_blank"
+                            >
+                                Shoot me an email
+                            </a>
+                        </p>
+                    </div>
+                </nav>
+
+                <!-- LINKEIN -->
+                <nav class="level is-mobile footer-group pt-2">
+                    <div class="level-left">
+                        <figure class="level-item image is-32x32">
+                            <img
+                                src="https://dani.sfo3.digitaloceanspaces.com/img/icon_linkedin.svg"
+                            />
+                        </figure>
+                        <p class="level-item">
+                            <a
+                                class="footer-group"
+                                href="https://www.linkedin.com/in/daninguyen-design/"
+                                target="_blank"
+                            >
+                                Add me on Linkedin
+                            </a>
+                        </p>
+                    </div>
+                </nav>
+
+                <!-- RESUME -->
+                <nav class="level is-mobile footer-group pt-2">
+                    <div class="level-left">
+                        <figure class="level-item image is-32x32">
+                            <img
+                                src="https://dani.sfo3.digitaloceanspaces.com/img/icon_resume.svg"
+                            />
+                        </figure>
+                        <p class="level-item">
+                            <a
+                                class="footer-group"
+                                href="https://dani.sfo3.digitaloceanspaces.com/pdf/Dani_Nguyen_Resume.pdf"
+                                target="_blank"
+                            >
+                                View my resume
+                            </a>
+                        </p>
+                    </div>
+                </nav>
             </div>
-        </div>
-        <div class="container">
-            <div class="columns">
-                <div class="column is-half is-offset-one-quarter px-6">
-                    <hr class="hr-nav-no-margin" />
-                    <div class="block">
-                        <nav class="level">
-                            <div class="level-left">
-                                <div class="level-item mx-4">
-                                    <figure class="image is-32x32">
-                                        <img
-                                            src="https://dani.sfo3.digitaloceanspaces.com/img/icon_mail.svg"
-                                        />
-                                    </figure>
-                                </div>
-                                <div class="level-item mx-4">
-                                    <h2 class="subtitle">
-                                        <a
-                                            href="mailto:daninguyen101@gmail.com"
-                                            target="_blank"
-                                        >
-                                            Shoot me an email
-                                        </a>
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="level-right">
-                                <div class="level-item mx-4">
-                                    <a
-                                        href="mailto:daninguyen101@gmail.com"
-                                        target="_blank"
-                                    >
-                                        <span
-                                            class="material-symbols-outlined"
-                                            style="font-size: 32"
-                                        >
-                                            north_east
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                    <hr class="hr-nav-no-margin" />
-                    <div class="block">
-                        <nav class="level">
-                            <div class="level-left">
-                                <div class="level-item mx-4">
-                                    <figure class="image is-32x32">
-                                        <img
-                                            src="https://dani.sfo3.digitaloceanspaces.com/img/icon_linkedin.svg"
-                                        />
-                                    </figure>
-                                </div>
-                                <div class="level-item mx-4">
-                                    <h2 class="subtitle">
-                                        <a
-                                            href="https://www.linkedin.com/in/daninguyen-design/"
-                                            target="_blank"
-                                            >Add me on LinkedIn</a
-                                        >
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="level-right">
-                                <div class="level-item mx-4">
-                                    <a
-                                        href="https://www.linkedin.com/in/daninguyen-design/"
-                                        target="_blank"
-                                    >
-                                        <span
-                                            class="material-symbols-outlined"
-                                            style="font-size: 32"
-                                        >
-                                            north_east
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                    <hr class="hr-nav-no-margin" />
-                    <div class="block">
-                        <nav class="level">
-                            <div class="level-left">
-                                <div class="level-item mx-4">
-                                    <figure class="image is-32x32">
-                                        <img
-                                            src="https://dani.sfo3.digitaloceanspaces.com/img/icon_resume.svg"
-                                        />
-                                    </figure>
-                                </div>
-                                <div class="level-item mx-4">
-                                    <h2 class="subtitle">
-                                        <a
-                                            href="https://dani.sfo3.digitaloceanspaces.com/pdf/Dani_Nguyen_Resume.pdf"
-                                            target="_blank"
-                                            >View my resume</a
-                                        >
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="level-right">
-                                <div class="level-item mx-4">
-                                    <a
-                                        href="https://dani.sfo3.digitaloceanspaces.com/pdf/Dani_Nguyen_Resume.pdf"
-                                        target="_blank"
-                                    >
-                                        <span
-                                            class="material-symbols-outlined"
-                                            style="font-size: 32"
-                                        >
-                                            north_east
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                    <hr class="hr-nav-no-margin" />
-                </div>
-            </div>
-        </div>
-        <br />
-        <div class="container my-6 has-text-centered">
-            ©2022 Dani Nguyen. All rights reserved.
         </div>
     </footer>
     <script>
-        const footerConnect1 = document.getElementById("footer-connect1");
-        const footerConnect2 = document.getElementById("footer-connect2");
-        const updateFooterConnect = () => {
-            if (window.innerWidth < 766) {
-                footerConnect1.style = "text-align: center!important;";
-                footerConnect2.style = "padding-left: 23%";
-            } else {
-                footerConnect1.style = "text-align: right!important;";
-                footerConnect2.style = "padding-left: 0%";
-            }
-        };
-
-        // Init
-        updateFooterConnect();
-
-        window.addEventListener("resize", function (event) {
-            updateFooterConnect();
-        });
-
-        // Dropdown toggle example
+        // Enable dropdown in navbar
         // https://bulma.io/documentation/components/navbar/
         document.addEventListener("DOMContentLoaded", () => {
             // Get all "navbar-burger" elements
