@@ -12,7 +12,8 @@ jtemplates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
 def index(request: Request):
-    return jtemplates.TemplateResponse("index.html", {"request": request})
+    # return jtemplates.TemplateResponse("index.html", {"request": request})
+    return jtemplates.TemplateResponse("501.html", {"request": request})
 
 
 @app.get("/about", response_class=HTMLResponse)
