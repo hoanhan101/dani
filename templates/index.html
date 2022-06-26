@@ -30,7 +30,7 @@
             opportunities.
         </p>
         <div class="block pt-5">
-            <a href="/about" class="button button-case-study">
+            <a id="btn-about-me" href="/about" class="button button-case-study">
                 More about me
             </a>
         </div>
@@ -66,6 +66,7 @@
                 </p>
                 <div class="block pt-6">
                     <a
+                        id="btn-view-pinterest"
                         href="/projects/pinterest"
                         class="button button-case-study"
                     >
@@ -93,6 +94,7 @@
                 </p>
                 <div class="block pt-6">
                     <a
+                        id="btn-view-timesheetx"
                         href="/projects/timesheetx"
                         class="button button-case-study"
                     >
@@ -121,7 +123,11 @@
                     investing.
                 </p>
                 <div class="block pt-6">
-                    <a href="/projects/giant" class="button button-case-study">
+                    <a
+                        id="btn-view-giant"
+                        href="/projects/giant"
+                        class="button button-case-study"
+                    >
                         View case study
                     </a>
                 </div>
@@ -140,7 +146,11 @@
                     <span class="heading1">projects</span>
                 </p>
                 <div class="block pt-5">
-                    <a href="/otherside" class="button button-case-study">
+                    <a
+                        id="btn-view-otherside"
+                        href="/otherside"
+                        class="button button-case-study"
+                    >
                         View more
                     </a>
                 </div>
@@ -180,12 +190,86 @@
     </div>
 </div>
 <script>
+    // ADD ARROW TO BUTTON
+    let btnAboutMe = document.getElementById("btn-about-me");
+    let btnViewPinterest = document.getElementById("btn-view-pinterest");
+    let btnViewTimesheetX = document.getElementById("btn-view-timesheetx");
+    let btnViewGiant = document.getElementById("btn-view-giant");
+    let btnViewOtherside = document.getElementById("btn-view-otherside");
+
+    const btnAboutMeMsg = "More about me";
+    const btnViewProjectMsg = "View case study";
+    const btnViewMoreMsg = "View more";
+    const btnArrowSpan = `
+        <span class="pl-2">
+            <figure class="image is-24x24">
+                <img
+                    src="https://dani.sfo3.digitaloceanspaces.com/img/icon_arrow_right.svg"
+                />
+            </figure>
+        </span>
+    `;
+
+    btnAboutMe.onmouseenter = () => {
+        btnAboutMe.innerHTML = `
+            ${btnAboutMeMsg}
+            ${btnArrowSpan}
+        `;
+    };
+
+    btnAboutMe.onmouseout = () => {
+        btnAboutMe.innerHTML = btnAboutMeMsg;
+    };
+
+    btnViewPinterest.onmouseenter = () => {
+        btnViewPinterest.innerHTML = `
+            ${btnViewProjectMsg}
+            ${btnArrowSpan}
+        `;
+    };
+
+    btnViewPinterest.onmouseout = () => {
+        btnViewPinterest.innerHTML = btnViewProjectMsg;
+    };
+
+    btnViewTimesheetX.onmouseenter = () => {
+        btnViewTimesheetX.innerHTML = `
+            ${btnViewProjectMsg}
+            ${btnArrowSpan}
+        `;
+    };
+
+    btnViewTimesheetX.onmouseout = () => {
+        btnViewTimesheetX.innerHTML = btnViewProjectMsg;
+    };
+
+    btnViewGiant.onmouseenter = () => {
+        btnViewGiant.innerHTML = `
+            ${btnViewProjectMsg}
+            ${btnArrowSpan}
+        `;
+    };
+
+    btnViewGiant.onmouseout = () => {
+        btnViewGiant.innerHTML = btnViewProjectMsg;
+    };
+
+    btnViewOtherside.onmouseenter = () => {
+        btnViewOtherside.innerHTML = `
+            ${btnViewMoreMsg}
+            ${btnArrowSpan}
+        `;
+    };
+
+    btnViewOtherside.onmouseout = () => {
+        btnViewOtherside.innerHTML = btnViewMoreMsg;
+    };
+
+    // USE STICKY HEADING
     let headingProject = document.getElementById("heading-selected-project");
 
     const changePointStart = 820;
     const changePointEnd = 3343;
-
-    console.log(headingProject.getBoundingClientRect().y);
 
     const useStickyHeading = () => {
         if (

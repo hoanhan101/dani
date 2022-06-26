@@ -109,6 +109,7 @@
                         </figure>
                         <p class="level-item">
                             <a
+                                id="btn-connect-email"
                                 class="inverse-color-group"
                                 href="mailto:daninguyen101@gmail.com"
                                 target="_blank"
@@ -116,6 +117,14 @@
                                 Shoot me an email
                             </a>
                         </p>
+                        <figure
+                            id="btn-connect-email-arrow"
+                            class="level-item image is-24x24"
+                        >
+                            <img
+                                src="https://dani.sfo3.digitaloceanspaces.com/img/icon_arrow_right.svg"
+                            />
+                        </figure>
                     </div>
                 </nav>
 
@@ -129,6 +138,7 @@
                         </figure>
                         <p class="level-item">
                             <a
+                                id="btn-connect-linkedin"
                                 class="inverse-color-group"
                                 href="https://www.linkedin.com/in/daninguyen-design/"
                                 target="_blank"
@@ -136,6 +146,14 @@
                                 Add me on Linkedin
                             </a>
                         </p>
+                        <figure
+                            id="btn-connect-linkedin-arrow"
+                            class="level-item image is-24x24"
+                        >
+                            <img
+                                src="https://dani.sfo3.digitaloceanspaces.com/img/icon_arrow_right.svg"
+                            />
+                        </figure>
                     </div>
                 </nav>
 
@@ -149,6 +167,7 @@
                         </figure>
                         <p class="level-item">
                             <a
+                                id="btn-connect-resume"
                                 class="inverse-color-group"
                                 href="https://dani.sfo3.digitaloceanspaces.com/pdf/Dani_Nguyen_Resume.pdf"
                                 target="_blank"
@@ -156,13 +175,66 @@
                                 View my resume
                             </a>
                         </p>
+                        <figure
+                            id="btn-connect-resume-arrow"
+                            class="level-item image is-24x24"
+                        >
+                            <img
+                                src="https://dani.sfo3.digitaloceanspaces.com/img/icon_arrow_right.svg"
+                            />
+                        </figure>
                     </div>
                 </nav>
             </div>
         </div>
     </footer>
     <script>
-        // Enable dropdown in navbar
+        // ADD ARROW TO BUTTON
+        let btnConnectEmail = document.getElementById("btn-connect-email");
+        let btnConnectEmailArrow = document.getElementById(
+            "btn-connect-email-arrow"
+        );
+        let btnConnectLinkedin = document.getElementById(
+            "btn-connect-linkedin"
+        );
+        let btnConnectLinkedinArrow = document.getElementById(
+            "btn-connect-linkedin-arrow"
+        );
+        let btnConnectResume = document.getElementById("btn-connect-resume");
+        let btnConnectResumeArrow = document.getElementById(
+            "btn-connect-resume-arrow"
+        );
+
+        // Hide on start
+        btnConnectEmailArrow.style.display = "none";
+        btnConnectLinkedinArrow.style.display = "none";
+        btnConnectResumeArrow.style.display = "none";
+
+        btnConnectEmail.onmouseenter = () => {
+            btnConnectEmailArrow.style.display = "";
+        };
+
+        btnConnectEmail.onmouseout = () => {
+            btnConnectEmailArrow.style.display = "none";
+        };
+
+        btnConnectLinkedin.onmouseenter = () => {
+            btnConnectLinkedinArrow.style.display = "";
+        };
+
+        btnConnectLinkedin.onmouseout = () => {
+            btnConnectLinkedinArrow.style.display = "none";
+        };
+
+        btnConnectResume.onmouseenter = () => {
+            btnConnectResumeArrow.style.display = "";
+        };
+
+        btnConnectResume.onmouseout = () => {
+            btnConnectResumeArrow.style.display = "none";
+        };
+
+        // ENABLE DROPDOWN IN NAVBAR
         // https://bulma.io/documentation/components/navbar/
         document.addEventListener("DOMContentLoaded", () => {
             // Get all "navbar-burger" elements
