@@ -2,47 +2,44 @@
 <div class="section">
     <div class="container">
         <hr class="hr-section" />
-        <hr class="hr-section-project" />
     </div>
     <div class="container">
-        <p class="heading1">
-            <span class="heading1">Hi, I'm</span>
-            <span class="heading1-space">.</span>
-            <span class="heading1-hero">Dani.</span>
+        <p class="heading0">
+            <span class="heading0">Hi, I'm</span>
+            <span class="heading0-space">..</span>
+            <span class="heading0-hero">Dani.</span>
         </p>
-        <p class="heading1 pt-5">
-            <span class="heading1">I'm a</span>
-            <span class="heading1-space">.</span>
-            <span class="heading1-hero">UX/UI designer</span>
+        <p class="heading0">
+            <span class="heading0">I'm a</span>
+            <span class="heading0-space">..</span>
+            <span class="heading0-hero">UX/UI designer!</span>
         </p>
-        <p class="heading1 pt-5">
-            <span class="heading1">based in</span>
-            <span class="heading1-space">.</span>
-            <span class="heading1-hero">the Bay Area, California.</span>
+        <p class="heading0">
+            <span class="heading0">based in</span>
+            <span class="heading0-space">..</span>
+            <span class="heading0-hero">the Bay Area, California.</span>
         </p>
         <hr class="hr-section-project" />
-        <p>
+        <p class="heading0-text">
             Aspiring designer, making products that are easy on the eye and the
             mind.
         </p>
-        <p>
+        <p class="heading0-text pb-3">
             Find me sneaking up on people’s problems and turning them into
             opportunities.
         </p>
-        <div class="block pt-5">
+        <!-- <div class="block pt-6">
             <a id="btn-about-me" href="/about" class="button button-case-study">
                 More about me
             </a>
-        </div>
+        </div> -->
     </div>
     <div class="container">
-        <hr class="hr-section-project" />
         <hr id="index-hr-page-break" class="hr-page-break" />
     </div>
-    <div class="container">
-        <hr class="hr-section-project" />
+    <div id="selected-project-for-fun" class="container">
         <div class="columns">
-            <div class="column is-5">
+            <div class="column is-5 pb-6">
                 <p id="heading-selected-project" class="heading1">
                     Selected projects (3)
                 </p>
@@ -58,7 +55,7 @@
                     </a>
                 </figure>
                 <div class="block body-text1 pt-5">
-                    <p>Feature design • UX/UI Design</p>
+                    <p>Feature design • UX/UI</p>
                 </div>
                 <p class="heading3 pt-3">Shopping without Leaving Pinterest</p>
                 <p class="line-height-150 pt-1">
@@ -85,7 +82,7 @@
                     </a>
                 </figure>
                 <div class="block body-text1 pt-5">
-                    <p>Feature design • UX/UI Design</p>
+                    <p>Responsive website • UX/UI</p>
                 </div>
                 <p class="heading3 pt-3">Redesigning TimesheetX</p>
                 <p class="line-height-150 pt-1">
@@ -127,19 +124,21 @@
                         id="btn-view-giant"
                         href="/projects/giant"
                         class="button button-case-study"
+                        style="display: none"
                     >
                         View case study
                     </a>
+                    <a class="button button-case-study"> Coming soon </a>
                 </div>
             </div>
         </div>
         <hr class="hr-section" />
     </div>
-    <div class="container">
+    <div id="fun-project-break" class="container">
         <hr class="hr-page-break" />
     </div>
-    <div class="container">
-        <div class="columns">
+    <div id="fun-project" class="container">
+        <div class="columns is-mobile">
             <div class="column is-3">
                 <p class="heading1">
                     <span class="heading1-hero-no-underline">Fun</span>
@@ -156,7 +155,7 @@
                 </div>
             </div>
             <div class="column">
-                <div class="columns">
+                <div class="columns is-mobile">
                     <div class="column">
                         <figure>
                             <img
@@ -191,7 +190,7 @@
 </div>
 <script>
     // ADD ARROW TO BUTTON
-    let btnAboutMe = document.getElementById("btn-about-me");
+    // let btnAboutMe = document.getElementById("btn-about-me");
     let btnViewPinterest = document.getElementById("btn-view-pinterest");
     let btnViewTimesheetX = document.getElementById("btn-view-timesheetx");
     let btnViewGiant = document.getElementById("btn-view-giant");
@@ -210,16 +209,16 @@
         </span>
     `;
 
-    btnAboutMe.onmouseenter = () => {
-        btnAboutMe.innerHTML = `
-            ${btnAboutMeMsg}
-            ${btnArrowSpan}
-        `;
-    };
+    // btnAboutMe.onmouseenter = () => {
+    //     btnAboutMe.innerHTML = `
+    //         ${btnAboutMeMsg}
+    //         ${btnArrowSpan}
+    //     `;
+    // };
 
-    btnAboutMe.onmouseout = () => {
-        btnAboutMe.innerHTML = btnAboutMeMsg;
-    };
+    // btnAboutMe.onmouseout = () => {
+    //     btnAboutMe.innerHTML = btnAboutMeMsg;
+    // };
 
     btnViewPinterest.onmouseenter = () => {
         btnViewPinterest.innerHTML = `
@@ -268,8 +267,8 @@
     // USE STICKY HEADING
     let headingProject = document.getElementById("heading-selected-project");
 
-    const changePointStart = 820;
-    const changePointEnd = 3343;
+    const changePointStart = 552;
+    const changePointEnd = 3078;
 
     const useStickyHeading = () => {
         if (

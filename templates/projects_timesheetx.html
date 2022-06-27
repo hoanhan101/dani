@@ -1,614 +1,631 @@
 {% extends "base.html" %} {% block content %}
 <div class="container my-6"><hr class="hr-section" /></div>
-<div class="container pt-3">
-    <div class="columns">
-        <div class="column is-three-fifths is-offset-one-fifth">
-            <div class="block heading1">
-                <p>
-                    Redesigning an Outdated Timesheet Website for Student
-                    Employees
+<div class="section">
+    <div class="container pt-3">
+        <div class="columns">
+            <div class="column is-three-fifths is-offset-one-fifth">
+                <div class="block heading1">
+                    <p>
+                        Redesigning an Outdated Timesheet Website for Student
+                        Employees
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-section-project" /></div>
+    <div class="container">
+        <figure class="img-full-width">
+            <img
+                src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_hero.png"
+                alt="TimesheetX Hero"
+            />
+        </figure>
+    </div>
+    <div class="container"><hr class="hr-section-project" /></div>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <figure>
+                    <img
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_logo.png"
+                        alt="TimesheetX Logo"
+                    />
+                </figure>
+            </div>
+            <div class="column is-6 is-offset-1">
+                <p class="line-height-180">
+                    TimesheetX is a comprehensive web solution for student
+                    employment timesheet needs. It is used and trusted by
+                    hundreds of higher education institutions and millions of
+                    students across the US today.
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading4">The Problem</p>
+            </div>
+            <div class="column is-6 is-offset-1">
+                <p class="line-height-180">
+                    Students use TimesheetX every other week to report time
+                    worked with supervisors to get paid. However, its student
+                    experience falls short of satisfactory. Students constantly
+                    report frustration and difficulty of use.
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading4">My Role</p>
+            </div>
+            <div class="column is-6 is-offset-1">
+                <p class="line-height-180">Product design • Solo project</p>
+                <p class="line-height-180 is-italic has-text-grey">
+                    Disclaimer: I am not affiliated with TimesheetX. This case
+                    study is an exploratory learning experience on a product I
+                    care about deeply.
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading4">Project duration</p>
+            </div>
+            <div class="column is-6 is-offset-1">
+                <p class="line-height-180">4 weeks • April 2022</p>
+            </div>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-page-break" /></div>
+    <div class="container">
+        <p class="heading2">Diverging to discover</p>
+        <div class="container"><hr class="hr-section-project" /></div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading3-cs">Kickoff — Usability audit</p>
+            </div>
+            <div class="column is-6 is-offset-1">
+                <p class="line-height-180">
+                    After getting an overview of TimesheetX, I set out to try it
+                    for myself to understand first-hand the struggles that my
+                    fellow students are facing. First, as an average human being
+                    and second, as a designer with a checklist of usability
+                    heuristics.
+                </p>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns">
+            <div class="column is-9 is-offset-1">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_current_website.png"
+                        alt="Current Website"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-4">
+                <p class="line-bold line-height-180 mt-6 mb-3">
+                    Usability audit reveals major issues in user control,
+                    consistency, and efficiency of use.
+                </p>
+                <p class="line-height-180">
+                    Besides the uninspiring and outdated UI, the website is an
+                    out-of-the-box solution without any information architecture
+                    or customization to streamline the timesheet workflow.
+                </p>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project" /></div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading3-cs">Insights from student employees</p>
+            </div>
+            <div class="content column is-6 is-offset-1">
+                <p class="line-height-180">
+                    I sat down with 5 student employees to find answers to key
+                    questions:
+                </p>
+                <ul>
+                    <li>What are students’ working and timesheet habits?</li>
+                    <li>
+                        What are their pain points when reporting timesheets?
+                    </li>
+                    <li>What do student employees need and want?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-4">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_student_insight.png"
+                        alt="Students Insight"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-4">
+                <p class="line-bold line-height-180 mt-6 mb-3">
+                    Students couldn’t use the website on their preferred
+                    devices.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Although the students’ flow usually starts on the phone -
+                    reading email reminders of approaching timesheet submission
+                    deadlines, they have to switch to a laptop because
+                    TimesheetX’s mobile experience is too limited.
+                </p>
+                <p class="line-bold line-height-180 mt-6 mb-3">
+                    Navigation doesn’t get easier over time.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Even senior students struggle with navigation to locate
+                    their jobs and wanted timesheets. The website presents
+                    redundant features and information, often limiting students’
+                    control and requiring a high cognitive load to skim through.
+                </p>
+                <p class="line-bold line-height-180 mt-6 mb-3">
+                    All students want a better way to extract their schedules
+                    into a timesheet.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Currently, all students rely on Google Calendar and memory
+                    to fill out worked shifts. They express an interest in a
+                    feature that would allow them to save a schedule to have it
+                    prefilled and editable if necessary. After affinity mapping
+                    all the user insights, I decided that this feature was
+                    potentially a project on its own and out of my time budget.
+                    It’s high-impact but also high-effort.
+                </p>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project" /></div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading3-cs">Insights from competitors</p>
+            </div>
+            <div class="content column is-6 is-offset-1">
+                <p class="line-height-180">
+                    After talking to students, I couldn’t help but wonder what
+                    other timesheet services colleges use for student
+                    employments. After identifying TimesheetX’s competitors and
+                    reviewing them, I found a big gap in the field.
+                </p>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns">
+            <div class="column is-9 is-offset-1">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_competitor_insight.png"
+                        alt="Competitors Insight"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-4">
+                <p class="line-height-180 my-3">
+                    Many colleges still use manual PDFs and physical timesheets.
+                    Others use outdated services similar to TimesheetX. And the
+                    more modern services often offer too many features at much
+                    higher prices.
+                </p>
+                <p class="line-bold line-height-180 mt-6 mb-3">
+                    TimesheetX has an opportunity to renew and optimize for
+                    institution’s employment needs.
                 </p>
             </div>
         </div>
     </div>
-</div>
-<div class="container"><hr class="hr-section-project" /></div>
-<div class="container">
-    <figure class="img-full-width">
-        <img src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_hero.png" alt="TimesheetX Hero" />
-    </figure>
-</div>
-<div class="container"><hr class="hr-section-project" /></div>
-<div class="container">
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <figure>
-                <img
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_logo.png"
-                    alt="TimesheetX Logo"
-                />
-            </figure>
+    <div class="container"><hr class="hr-page-break" /></div>
+    <div class="container">
+        <p class="heading2">Framing problem areas</p>
+        <div class="container"><hr class="hr-section-project" /></div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading3-cs">The current user experience</p>
+            </div>
+            <div class="content column is-6 is-offset-1">
+                <p class="line-height-180 my-3">
+                    With all the insights gathered, I prioritized and mapped
+                    them out to identify problem areas and opportunities for
+                    improvements.
+                </p>
+            </div>
         </div>
-        <div class="column is-6 is-offset-1">
-            <p class="line-height-180">
-                TimesheetX is a comprehensive web solution for student
-                employment timesheet needs. It is used and trusted by hundreds
-                of higher education institutions and millions of students across
-                the US today.
-            </p>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading4">The Problem</p>
-        </div>
-        <div class="column is-6 is-offset-1">
-            <p class="line-height-180">
-                Students use TimesheetX every other week to report time worked
-                with supervisors to get paid. However, its student experience
-                falls short of satisfactory. Students constantly report
-                frustration and difficulty of use.
-            </p>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading4">My Role</p>
-        </div>
-        <div class="column is-6 is-offset-1">
-            <p class="line-height-180">Product design • Solo project</p>
-            <p class="line-height-180 is-italic has-text-grey">
-                Disclaimer: I am not affiliated with TimesheetX. This case study
-                is an exploratory learning experience on a product I care about
-                deeply.
-            </p>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading4">Project duration</p>
-        </div>
-        <div class="column is-6 is-offset-1">
-            <p class="line-height-180">4 weeks • April 2022</p>
-        </div>
-    </div>
-</div>
-<div class="container"><hr class="hr-page-break" /></div>
-<div class="container">
-    <p class="heading2">Diverging to discover</p>
-    <div class="container"><hr class="hr-section-project" /></div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading3">Kickoff — Usability audit</p>
-        </div>
-        <div class="column is-6 is-offset-1">
-            <p class="line-height-180">
-                After getting an overview of TimesheetX, I set out to try it for
-                myself to understand first-hand the struggles that my fellow
-                students are facing. First, as an average human being and
-                second, as a designer with a checklist of usability heuristics.
-            </p>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns">
-        <div class="column is-9 is-offset-1">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_current_website.png"
-                    alt="Current Website"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-6 is-offset-4">
-            <p class="line-bold line-height-180 mt-6 mb-3">
-                Usability audit reveals major issues in user control,
-                consistency, and efficiency of use.
-            </p>
-            <p class="line-height-180">
-                Besides the uninspiring and outdated UI, the website is an
-                out-of-the-box solution without any information architecture or
-                customization to streamline the timesheet workflow.
-            </p>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project" /></div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading3">Insights from student employees</p>
-        </div>
-        <div class="content column is-6 is-offset-1">
-            <p class="line-height-180">
-                I sat down with 5 student employees to find answers to key
-                questions:
-            </p>
-            <ul>
-                <li>What are students’ working and timesheet habits?</li>
-                <li>What are their pain points when reporting timesheets?</li>
-                <li>What do student employees need and want?</li>
-            </ul>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-6 is-offset-4">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_student_insight.png"
-                    alt="Students Insight"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-6 is-offset-4">
-            <p class="line-bold line-height-180 mt-6 mb-3">
-                Students couldn’t use the website on their preferred devices.
-            </p>
-            <p class="line-height-180 mb-3">
-                Although the students’ flow usually starts on the phone -
-                reading email reminders of approaching timesheet submission
-                deadlines, they have to switch to a laptop because TimesheetX’s
-                mobile experience is too limited.
-            </p>
-            <p class="line-bold line-height-180 mt-6 mb-3">
-                Navigation doesn’t get easier over time.
-            </p>
-            <p class="line-height-180 mb-3">
-                Even senior students struggle with navigation to locate their
-                jobs and wanted timesheets. The website presents redundant
-                features and information, often limiting students’ control and
-                requiring a high cognitive load to skim through.
-            </p>
-            <p class="line-bold line-height-180 mt-6 mb-3">
-                All students want a better way to extract their schedules into a
-                timesheet.
-            </p>
-            <p class="line-height-180 mb-3">
-                Currently, all students rely on Google Calendar and memory to
-                fill out worked shifts. They express an interest in a feature
-                that would allow them to save a schedule to have it prefilled
-                and editable if necessary. After affinity mapping all the user
-                insights, I decided that this feature was potentially a project
-                on its own and out of my time budget. It’s high-impact but also
-                high-effort.
-            </p>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project" /></div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading3">Insights from competitors</p>
-        </div>
-        <div class="content column is-6 is-offset-1">
-            <p class="line-height-180">
-                After talking to students, I couldn’t help but wonder what other
-                timesheet services colleges use for student employments. After
-                identifying TimesheetX’s competitors and reviewing them, I found
-                a big gap in the field.
-            </p>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns">
-        <div class="column is-9 is-offset-1">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_competitor_insight.png"
-                    alt="Competitors Insight"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-6 is-offset-4">
-            <p class="line-height-180 my-3">
-                Many colleges still use manual PDFs and physical timesheets.
-                Others use outdated services similar to TimesheetX. And the more
-                modern services often offer too many features at much higher
-                prices.
-            </p>
-            <p class="line-bold line-height-180 mt-6 mb-3">
-                TimesheetX has an opportunity to renew and optimize for
-                institution’s employment needs.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="container"><hr class="hr-page-break" /></div>
-<div class="container">
-    <p class="heading2">Framing problem areas</p>
-    <div class="container"><hr class="hr-section-project" /></div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading3">The current user experience</p>
-        </div>
-        <div class="content column is-6 is-offset-1">
-            <p class="line-height-180 my-3">
-                With all the insights gathered, I prioritized and mapped them
-                out to identify problem areas and opportunities for
-                improvements.
-            </p>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns">
-        <div class="column is-9 is-offset-1">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_current_ux.png"
-                    alt="Current UX"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-6 is-offset-4">
-            <p class="line-bold line-height-180 mt-6 mb-3">
-                Multiple touchpoints are required to submit a single timesheet
-                successfully.
-            </p>
-            <p class="line-height-180 mb-3">
-                Besides switching devices, students often need additional
-                communication with peers and supervisors to override unnecessary
-                work allotment restrictions, which leads to frustration and
-                wasted time.
-            </p>
-            <p class="line-bold line-height-180 mt-6 mb-3">
-                Date and time entry is the most painful part.
-            </p>
-            <p class="line-height-180 mb-3">
-                Students must scroll through and select from a list of dates and
-                times (by the minute) for every shift. This experience is
-                especially agonizing on the phone since the website is
-                non-responsive with no customization for a touch screen.
-            </p>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading3">From problems to solutions</p>
-        </div>
-        <div class="content column is-6 is-offset-1">
-            <p class="line-bold line-height-180 my-3">So how might we?</p>
-            <ul>
-                <li>Reduce navigation time?</li>
-                <li>Optimize TimesheetX for mobile devices?</li>
-                <li>Improve date and time entry interactions?</li>
-            </ul>
-            <p class="line-height-180 mb-3">
-                I brainstormed potential solutions for other problem areas
-                identified and translated these solutions into several wireframe
-                concepts for preference testing.
-            </p>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-9 is-offset-1">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_wireframe1.png"
-                    alt="Wireframe 1"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-9 is-offset-1">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_wireframe2.png"
-                    alt="Wireframe 2"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-vcentered">
-        <div class="column is-5 is-offset-1">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_wireframe3.png"
-                    alt="Wireframe 3"
-                />
-            </figure>
-        </div>
-        <div class="column is-4">
-            <p class="line-bold line-height-180 my-3">
-                Only show relevant information.
-            </p>
-            <p class="line-height-180 mb-3">
-                Since students rarely need to review past jobs, old timesheets,
-                and help documentation, this information is stored in
-                easy-to-find categories. A card sort exercise with students also
-                reveals that they prefer all help documentation in one
-                “Resources” category.
-            </p>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-vcentered">
-        <div class="column is-5 is-offset-1">
-            <p class="line-bold line-height-180 my-3">
-                Flexible timesheet layout.
-            </p>
-            <p class="line-height-180 mb-3">
-                Instead of a calendar view with a designated time slot for each
-                day, students prefer to add shifts themselves. It gives them the
-                flexibility of only adding dates they worked and multiple shifts
-                a day when applicable. Plus, it saves screen space and works
-                well with vertical scrolling, which all students prefer.
-            </p>
-        </div>
-        <div class="column is-4">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_wireframe4.png"
-                    alt="Wireframe 4"
-                />
-            </figure>
-        </div>
-    </div>
-</div>
-<div class="container"><hr class="hr-page-break" /></div>
-<div class="container">
-    <p class="heading2">The UI makeover</p>
-    <div class="container"><hr class="hr-section-project" /></div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading3">Logo and style</p>
-        </div>
-        <div class="content column is-6 is-offset-1">
-            <p class="line-height-180 my-3">
-                Now that the new website has a strong skeleton, it’s time for
-                the exciting part! It’s clear from the get-go that TimesheetX
-                needs a new look. I needed to design for students while keeping
-                it professional for institutions.
-            </p>
-            <p class="line-height-180 mb-3">
-                Inspired by TimesheetX’s current color scheme and minimal
-                design, I created a new logo that appeals to the young adults
-                and a clean, simplistic interface incorporating graphical
-                elements to reduce users’ cognitive load.
-            </p>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-9 is-offset-1">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_logo_redesign.png"
-                    alt="Logo Redesign"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-9 is-offset-1">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_style_title.png"
-                    alt="Style Title"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-6 is-offset-4">
-            <p class="line-height-180 my-3">
-                The new logo and style were then applied to the wireframes to
-                become high-fidelity prototype ready for testing.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="container"><hr class="hr-page-break" /></div>
-<div class="container">
-    <p class="heading2">The results</p>
-    <div class="container"><hr class="hr-section-project" /></div>
-    <div class="columns">
-        <div class="column">
-            <figure>
-                <img
-                    class="zoom"
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_result_banner.png"
-                    alt="Result Banner"
-                />
-            </figure>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-vcentered">
-        <div class="column is-4 is-offset-1">
-            <video class="video-demo" controls>
-                <source
-                    src="https://dani.sfo3.digitaloceanspaces.com/video/timesheetx_video1.mov"
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="content column is-5 is-offset-1">
-            <p class="line-height-180 my-3 heading3">
-                Prominent access to jobs
-            </p>
-            <p class="line-height-180 mb-3">
-                The new information architecture provides instant access to
-                relevant jobs and timesheets as soon as students log into their
-                accounts.
-            </p>
-            <p class="line-height-180 mb-3">
-                All secondary information can be found in easy-to-access
-                categories from the navigation bar.
-            </p>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div id="result-timesheetx-mobile1" class="columns is-vcentered">
-        <div class="column is-4 is-offset-1">
-            <video class="video-demo" controls>
-                <source
-                    src="https://dani.sfo3.digitaloceanspaces.com/video/timesheetx_video2.mov"
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="content column is-5 is-offset-1">
-            <p class="line-height-180 my-3 heading3">
-                Customized layouts and interactions
-            </p>
-            <p class="line-height-180 mb-3">
-                The two-week timesheet period is broken down into two rows for
-                easier recalling and to avoid selecting the wrong dates.
-            </p>
-            <p class="line-height-180 mb-3">
-                Students are able to add and remove shifts quickly. Date and
-                time selection resembles the alarm setting design on mobile
-                devices for ease of use.
-            </p>
-        </div>
-    </div>
-    <div id="result-timesheetx-desktop1" class="columns is-vcentered">
-        <div class="content column is-5 is-offset-1">
-            <p class="line-height-180 my-3 heading3">
-                Customized layouts and interactions
-            </p>
-            <p class="line-height-180 mb-3">
-                The two-week timesheet period is broken down into two rows for
-                easier recalling and to avoid selecting the wrong dates.
-            </p>
-            <p class="line-height-180 mb-3">
-                Students are able to add and remove shifts quickly. Date and
-                time selection resembles the alarm setting design on mobile
-                devices for ease of use.
-            </p>
-        </div>
-        <div class="column is-4 is-offset-1">
-            <video class="video-demo" controls>
-                <source
-                    src="https://dani.sfo3.digitaloceanspaces.com/video/timesheetx_video2.mov"
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns is-vcentered">
-        <div class="column is-4 is-offset-1">
-            <video class="video-demo" controls>
-                <source
-                    src="https://dani.sfo3.digitaloceanspaces.com/video/timesheetx_video3.mov"
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="content column is-5 is-offset-1">
-            <p class="line-height-180 my-3 heading3">
-                Giving control back to the students
-            </p>
-            <p class="line-height-180 mb-3">
-                Students can edit their timesheets after submission, as long as
-                supervisors haven’t finalized them yet.
-            </p>
-            <p class="line-height-180 mb-3">
-                Unnecessary limitations about work allotment are removed to give
-                students more control and accountability over their timesheets.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="container"><hr class="hr-page-break" /></div>
-<div class="container">
-    <p class="heading2">Last thoughts</p>
-    <div class="container"><hr class="hr-section-project" /></div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading3">If I had more time, I would</p>
-        </div>
-        <div class="content column is-6 is-offset-1">
-            <ul>
-                <li>Design a work schedule and timesheet auto-fill feature</li>
-                <li>Design more screens for a more realistic prototype</li>
-                <li>
-                    Conduct more user testings and keep refining the design
-                    based on test results
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="container"><hr class="hr-section-project-small" /></div>
-    <div class="columns">
-        <div class="column is-2 is-offset-1">
-            <p class="heading3">Moving forward</p>
-        </div>
-        <div class="content column is-6 is-offset-1">
-            <p class="line-height-180 my-3">
-                This project led me to connect with my fellow students and talk
-                about the struggles often brushed off. But it also makes me feel
-                blue: Although students make up the majority of TimesheetX
-                users, they didn’t get a say in choosing the product in the
-                first place and feel forced to use an outdated product.
-            </p>
-            <p class="line-height-180 mb-3">
-                So moving forward, I plan to bring my design to TimesheetX and
-                hopefully see them renew the product in the future!
-            </p>
-        </div>
-    </div>
-</div>
-<div class="container"><hr class="hr-section-project" /></div>
-<div class="container">
-    <figure class="img-full-width">
-        <img src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_result_footer.png" alt="Footer" />
-    </figure>
-</div>
-<div class="container"><hr class="hr-section-project" /></div>
-<div class="container">
-    <p class="heading2 has-text-centered">More case studies</p>
-    <hr class="hr-section-project" />
-    <div class="columns">
-        <div class="column">
-            <figure class="thumbnail-hover-wrapper">
-                <a href="/projects/pinterest">
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns">
+            <div class="column is-9 is-offset-1">
+                <figure>
                     <img
-                        src="https://dani.sfo3.digitaloceanspaces.com/img/pinterest_thumbnail_normal.png"
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_current_ux.png"
+                        alt="Current UX"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-4">
+                <p class="line-bold line-height-180 mt-6 mb-3">
+                    Multiple touchpoints are required to submit a single
+                    timesheet successfully.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Besides switching devices, students often need additional
+                    communication with peers and supervisors to override
+                    unnecessary work allotment restrictions, which leads to
+                    frustration and wasted time.
+                </p>
+                <p class="line-bold line-height-180 mt-6 mb-3">
+                    Date and time entry is the most painful part.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Students must scroll through and select from a list of dates
+                    and times (by the minute) for every shift. This experience
+                    is especially agonizing on the phone since the website is
+                    non-responsive with no customization for a touch screen.
+                </p>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading3-cs">From problems to solutions</p>
+            </div>
+            <div class="content column is-6 is-offset-1">
+                <p class="line-bold line-height-180 my-3">So how might we?</p>
+                <ul>
+                    <li>Reduce navigation time?</li>
+                    <li>Optimize TimesheetX for mobile devices?</li>
+                    <li>Improve date and time entry interactions?</li>
+                </ul>
+                <p class="line-height-180 mb-3">
+                    I brainstormed potential solutions for other problem areas
+                    identified and translated these solutions into several
+                    wireframe concepts for preference testing.
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-9 is-offset-1">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_wireframe1.png"
+                        alt="Wireframe 1"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-9 is-offset-1">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_wireframe2.png"
+                        alt="Wireframe 2"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns is-vcentered">
+            <div class="column is-5 is-offset-1">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_wireframe3.png"
+                        alt="Wireframe 3"
+                    />
+                </figure>
+            </div>
+            <div class="column is-4">
+                <p class="line-bold line-height-180 my-3">
+                    Only show relevant information.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Since students rarely need to review past jobs, old
+                    timesheets, and help documentation, this information is
+                    stored in easy-to-find categories. A card sort exercise with
+                    students also reveals that they prefer all help
+                    documentation in one “Resources” category.
+                </p>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns is-vcentered">
+            <div class="column is-5 is-offset-1">
+                <p class="line-bold line-height-180 my-3">
+                    Flexible timesheet layout.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Instead of a calendar view with a designated time slot for
+                    each day, students prefer to add shifts themselves. It gives
+                    them the flexibility of only adding dates they worked and
+                    multiple shifts a day when applicable. Plus, it saves screen
+                    space and works well with vertical scrolling, which all
+                    students prefer.
+                </p>
+            </div>
+            <div class="column is-4">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_wireframe4.png"
+                        alt="Wireframe 4"
+                    />
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-page-break" /></div>
+    <div class="container">
+        <p class="heading2">The UI makeover</p>
+        <div class="container"><hr class="hr-section-project" /></div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading3-cs">Logo and style</p>
+            </div>
+            <div class="content column is-6 is-offset-1">
+                <p class="line-height-180 my-3">
+                    Now that the new website has a strong skeleton, it’s time
+                    for the exciting part! It’s clear from the get-go that
+                    TimesheetX needs a new look. I needed to design for students
+                    while keeping it professional for institutions.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Inspired by TimesheetX’s current color scheme and minimal
+                    design, I created a new logo that appeals to the young
+                    adults and a clean, simplistic interface incorporating
+                    graphical elements to reduce users’ cognitive load.
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-9 is-offset-1">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_logo_redesign.png"
+                        alt="Logo Redesign"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-9 is-offset-1">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_style_title.png"
+                        alt="Style Title"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-4">
+                <p class="line-height-180 my-3">
+                    The new logo and style were then applied to the wireframes
+                    to become high-fidelity prototype ready for testing.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-page-break" /></div>
+    <div class="container">
+        <p class="heading2">The results</p>
+        <div class="container"><hr class="hr-section-project" /></div>
+        <div class="columns">
+            <div class="column">
+                <figure>
+                    <img
+                        class="zoom"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_result_banner.png"
+                        alt="Result Banner"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-1">
+                <video class="video-demo" controls>
+                    <source
+                        src="https://dani.sfo3.digitaloceanspaces.com/video/timesheetx_video1.mov"
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="content column is-5 is-offset-1">
+                <p class="line-height-180 my-3 heading3-cs">
+                    Prominent access to jobs
+                </p>
+                <p class="line-height-180 mb-3">
+                    The new information architecture provides instant access to
+                    relevant jobs and timesheets as soon as students log into
+                    their accounts.
+                </p>
+                <p class="line-height-180 mb-3">
+                    All secondary information can be found in easy-to-access
+                    categories from the navigation bar.
+                </p>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div id="result-timesheetx-mobile1" class="columns is-vcentered">
+            <div class="column is-4 is-offset-1">
+                <video class="video-demo" controls>
+                    <source
+                        src="https://dani.sfo3.digitaloceanspaces.com/video/timesheetx_video2.mov"
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="content column is-5 is-offset-1">
+                <p class="line-height-180 my-3 heading3-cs">
+                    Customized layouts and interactions
+                </p>
+                <p class="line-height-180 mb-3">
+                    The two-week timesheet period is broken down into two rows
+                    for easier recalling and to avoid selecting the wrong dates.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Students are able to add and remove shifts quickly. Date and
+                    time selection resembles the alarm setting design on mobile
+                    devices for ease of use.
+                </p>
+            </div>
+        </div>
+        <div id="result-timesheetx-desktop1" class="columns is-vcentered">
+            <div class="content column is-5 is-offset-1">
+                <p class="line-height-180 my-3 heading3-cs">
+                    Customized layouts and interactions
+                </p>
+                <p class="line-height-180 mb-3">
+                    The two-week timesheet period is broken down into two rows
+                    for easier recalling and to avoid selecting the wrong dates.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Students are able to add and remove shifts quickly. Date and
+                    time selection resembles the alarm setting design on mobile
+                    devices for ease of use.
+                </p>
+            </div>
+            <div class="column is-4 is-offset-1">
+                <video class="video-demo" controls>
+                    <source
+                        src="https://dani.sfo3.digitaloceanspaces.com/video/timesheetx_video2.mov"
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-1">
+                <video class="video-demo" controls>
+                    <source
+                        src="https://dani.sfo3.digitaloceanspaces.com/video/timesheetx_video3.mov"
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="content column is-5 is-offset-1">
+                <p class="line-height-180 my-3 heading3-cs">
+                    Giving control back to the students
+                </p>
+                <p class="line-height-180 mb-3">
+                    Students can edit their timesheets after submission, as long
+                    as supervisors haven’t finalized them yet.
+                </p>
+                <p class="line-height-180 mb-3">
+                    Unnecessary limitations about work allotment are removed to
+                    give students more control and accountability over their
+                    timesheets.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-page-break" /></div>
+    <div class="container">
+        <p class="heading2">Last thoughts</p>
+        <div class="container"><hr class="hr-section-project" /></div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading3-cs">If I had more time, I would</p>
+            </div>
+            <div class="content column is-6 is-offset-1">
+                <ul>
+                    <li>
+                        Design a work schedule and timesheet auto-fill feature
+                    </li>
+                    <li>Design more screens for a more realistic prototype</li>
+                    <li>
+                        Conduct more user testings and keep refining the design
+                        based on test results
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container"><hr class="hr-section-project-small" /></div>
+        <div class="columns">
+            <div class="column is-2 is-offset-1">
+                <p class="heading3-cs">Moving forward</p>
+            </div>
+            <div class="content column is-6 is-offset-1">
+                <p class="line-height-180 my-3">
+                    This project led me to connect with my fellow students and
+                    talk about the struggles often brushed off. But it also
+                    makes me feel blue: Although students make up the majority
+                    of TimesheetX users, they didn’t get a say in choosing the
+                    product in the first place and feel forced to use an
+                    outdated product.
+                </p>
+                <p class="line-height-180 mb-3">
+                    So moving forward, I plan to bring my design to TimesheetX
+                    and hopefully see them renew the product in the future!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container"><hr class="hr-section-project" /></div>
+    <div class="container">
+        <figure class="img-full-width">
+            <img
+                src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_result_footer.png"
+                alt="Footer"
+            />
+        </figure>
+    </div>
+    <div class="container"><hr class="hr-section-project" /></div>
+    <div class="container">
+        <p class="heading2 has-text-centered">More case studies</p>
+        <hr class="hr-section-project" />
+        <div class="columns">
+            <div class="column">
+                <figure class="thumbnail-hover-wrapper">
+                    <a href="/projects/pinterest">
+                        <img
+                            src="https://dani.sfo3.digitaloceanspaces.com/img/pinterest_thumbnail_normal.png"
+                            alt="Thumbnail Normal"
+                        />
+                        <img
+                            src="https://dani.sfo3.digitaloceanspaces.com/img/pinterest_thumbnail_hover.png"
+                            class="thumbnail-hover"
+                            alt="Thumbnail Hover"
+                        />
+                    </a>
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="thumbnail-hover-wrapper">
+                    <img
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/giant_thumbnail_normal.png"
                         alt="Thumbnail Normal"
                     />
                     <img
-                        src="https://dani.sfo3.digitaloceanspaces.com/img/pinterest_thumbnail_hover.png"
+                        src="https://dani.sfo3.digitaloceanspaces.com/img/giant_thumbnail_hover_tmp.png"
                         class="thumbnail-hover"
                         alt="Thumbnail Hover"
                     />
-                </a>
-            </figure>
-        </div>
-        <div class="column">
-            <figure class="thumbnail-hover-wrapper">
-                <img
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/giant_thumbnail_normal.png"
-                    alt="Thumbnail Normal"
-                />
-                <img
-                    src="https://dani.sfo3.digitaloceanspaces.com/img/giant_thumbnail_hover_tmp.png"
-                    class="thumbnail-hover"
-                    alt="Thumbnail Hover"
-                />
-            </figure>
+                </figure>
+            </div>
         </div>
     </div>
 </div>
