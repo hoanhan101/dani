@@ -4,8 +4,8 @@
     <div class="container pt-3">
         <div class="columns">
             <div class="column is-three-fifths is-offset-one-fifth">
-                <div class="block heading1">
-                    <p>
+                <div class="block">
+                    <p class="heading1-cs">
                         Redesigning an Outdated Timesheet Website for Student
                         Employees
                     </p>
@@ -17,6 +17,7 @@
     <div class="container">
         <figure class="img-full-width">
             <img
+                id="hero-timesheetx-mobile"
                 src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_hero.png"
                 alt="TimesheetX Hero"
             />
@@ -30,6 +31,7 @@
                     <img
                         src="https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_logo.png"
                         alt="TimesheetX Logo"
+                        class="project-logo-mobile"
                     />
                 </figure>
             </div>
@@ -630,6 +632,9 @@
     </div>
 </div>
 <script>
+    const heroTimesheetXMobile = document.getElementById(
+        "hero-timesheetx-mobile"
+    );
     const resultTimesheetXMobile1 = document.getElementById(
         "result-timesheetx-mobile1"
     );
@@ -637,6 +642,14 @@
         "result-timesheetx-desktop1"
     );
     const updateResultTimesheetX = () => {
+        if (window.innerWidth <= 768) {
+            heroTimesheetXMobile.src =
+                "https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_thumbnail.png";
+        } else {
+            heroTimesheetXMobile.src =
+                "https://dani.sfo3.digitaloceanspaces.com/img/timesheetx_hero.png";
+        }
+
         if (window.innerWidth <= 866) {
             resultTimesheetXMobile1.style.display = "";
             resultTimesheetXDesktop1.style.display = "none";

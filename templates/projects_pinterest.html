@@ -4,8 +4,8 @@
     <div class="container pt-3">
         <div class="columns">
             <div class="column is-three-fifths is-offset-one-fifth">
-                <div class="block heading1">
-                    <p>
+                <div class="block">
+                    <p class="heading1-cs">
                         Turning Pins into Purchases with an In-app Shopping
                         Feature
                     </p>
@@ -17,6 +17,7 @@
     <div class="container">
         <figure>
             <img
+                id="hero-pinterest-mobile"
                 src="https://dani.sfo3.digitaloceanspaces.com/img/pinterest_hero.png"
                 alt="Pinterest Hero"
             />
@@ -30,6 +31,7 @@
                     <img
                         src="https://dani.sfo3.digitaloceanspaces.com/img/pinterest_logo.png"
                         alt="Pinterest Logo"
+                        class="project-logo-mobile"
                     />
                 </figure>
             </div>
@@ -693,6 +695,9 @@
     </div>
 </div>
 <script>
+    const heroPinterestMobile = document.getElementById(
+        "hero-pinterest-mobile"
+    );
     const resultPinterestMobile1 = document.getElementById(
         "result-pinterest-mobile1"
     );
@@ -707,6 +712,14 @@
     );
 
     const updateResultPinterest = () => {
+        if (window.innerWidth <= 768) {
+            heroPinterestMobile.src =
+                "https://dani.sfo3.digitaloceanspaces.com/img/pinterest_thumbnail.png";
+        } else {
+            heroPinterestMobile.src =
+                "https://dani.sfo3.digitaloceanspaces.com/img/pinterest_hero.png";
+        }
+
         if (window.innerWidth <= 866) {
             resultPinterestMobile1.style.display = "";
             resultPinterestMobile2.style.display = "";

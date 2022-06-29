@@ -153,6 +153,15 @@ nav {
     letter-spacing: -0.75px;
 }
 
+.heading1-cs {
+    color: #2f2d2b;
+    font-family: "Vollkorn", serif;
+    font-size: 44px;
+    line-height: 160%;
+    font-weight: 500;
+    letter-spacing: -0.75px;
+}
+
 .heading1-space {
     color: #f1efea;
     margin-left: -0.6rem;
@@ -322,9 +331,6 @@ nav {
 
 .zoom:hover {
     transition: 0.25s;
-}
-
-.zoom:hover {
     transform: scale(1.025);
 }
 
@@ -360,9 +366,17 @@ nav {
     #fun-project-break {
         display: none;
     }
+
+    .heading1-cs {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 768px) {
+    .project-logo-mobile {
+        width: 30%;
+    }
+
     .font-size-nav {
         font-size: 18px;
     }
