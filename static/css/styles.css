@@ -205,11 +205,15 @@ nav {
 
 .heading3-cs {
     color: #2f2d2b;
-    font-family: "Karla", serif;
-    font-size: 24px;
+    font-family: "Vollkorn", serif;
+    font-size: 32px;
     line-height: 150%;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -0.75px;
+}
+
+.heading3-cs-pinterest {
+    color: #c9362e !important;
 }
 
 .heading3-hero {
@@ -248,6 +252,12 @@ nav {
     background-color: #aea69e;
     height: 1px;
     margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.hr-page-break-with-text {
+    background-color: #aea69e;
+    height: 1px;
     margin-bottom: 64px;
 }
 
