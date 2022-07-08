@@ -102,7 +102,7 @@
         </div>
     </div>
     <!-- <div class="container"><hr class="hr-section-project" /></div> -->
-    <div class="container" style="display: none">
+    <!-- <div class="container">
         <div class="columns is-vcentered">
             <div class="column is-4 is-offset-2">
                 <video class="video-demo" controls>
@@ -255,7 +255,7 @@
                 </video>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="container"><hr class="hr-section-project" /></div>
     <div class="container">
         <div class="columns">
@@ -910,18 +910,18 @@
     const heroPinterestMobile = document.getElementById(
         "hero-pinterest-mobile"
     );
-    const resultPinterestMobile1 = document.getElementById(
-        "result-pinterest-mobile1"
-    );
-    const resultPinterestDesktop1 = document.getElementById(
-        "result-pinterest-desktop1"
-    );
-    const resultPinterestMobile2 = document.getElementById(
-        "result-pinterest-mobile2"
-    );
-    const resultPinterestDesktop2 = document.getElementById(
-        "result-pinterest-desktop2"
-    );
+    // const resultPinterestMobile1 = document.getElementById(
+    //     "result-pinterest-mobile1"
+    // );
+    // const resultPinterestDesktop1 = document.getElementById(
+    //     "result-pinterest-desktop1"
+    // );
+    // const resultPinterestMobile2 = document.getElementById(
+    //     "result-pinterest-mobile2"
+    // );
+    // const resultPinterestDesktop2 = document.getElementById(
+    //     "result-pinterest-desktop2"
+    // );
 
     const updateResultPinterest = () => {
         if (window.innerWidth <= 768) {
@@ -932,17 +932,17 @@
                 "https://dani.sfo3.digitaloceanspaces.com/img/pinterest_hero.png";
         }
 
-        if (window.innerWidth <= 866) {
-            resultPinterestMobile1.style.display = "";
-            resultPinterestMobile2.style.display = "";
-            resultPinterestDesktop1.style.display = "none";
-            resultPinterestDesktop2.style.display = "none";
-        } else {
-            resultPinterestMobile1.style.display = "none";
-            resultPinterestMobile2.style.display = "none";
-            resultPinterestDesktop1.style.display = "";
-            resultPinterestDesktop2.style.display = "";
-        }
+        // if (window.innerWidth <= 866) {
+        //     resultPinterestMobile1.style.display = "";
+        //     resultPinterestMobile2.style.display = "";
+        //     resultPinterestDesktop1.style.display = "none";
+        //     resultPinterestDesktop2.style.display = "none";
+        // } else {
+        //     resultPinterestMobile1.style.display = "none";
+        //     resultPinterestMobile2.style.display = "none";
+        //     resultPinterestDesktop1.style.display = "";
+        //     resultPinterestDesktop2.style.display = "";
+        // }
     };
 
     // Init
